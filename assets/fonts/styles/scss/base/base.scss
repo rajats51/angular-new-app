@@ -1,0 +1,128 @@
+
+// Set baseline font declaration, weight, size, and line-height
+// Percentage based mixin defined here allows developers to set font sizes in px values
+// Browser will render the font using 'rems' by default, reverting to 'px' if not supported
+
+html {
+	@include font-pncbrand();
+	@include font-weight(normal);
+	font-size: 62.5%;
+	@include line-height(12);
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	padding:0px;
+	margin:0px;
+	width:100%;
+    height:100%;	
+}
+body {
+	@include font-size(13);
+	@include line-height(15);
+	color: #202c47;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+	}
+
+// MAKE SURE h1 etc all use "bold" version of font
+// MAKE SURE b bold strong all use "bold" version of font
+// MAKE SURE all italics use italic version of respective font
+// TEST ALL weights and sizes
+// NEED TO add breakpoints for all of these specs to match the mobile size in DSM
+
+h1 {
+	@include font-weight(medium);
+	@include font-size(30);
+	@include line-height(34);
+
+	// CREATE COLOR VARIABLES
+	//color: #0068AC;
+
+	&.banner {
+		@include font-size(50);
+		@include line-height(50);
+
+		// NEED TO SHOW THESE ARE WHITE
+		// ADD A BANNER BLOCK WITH BG COLOR OF LIGHT BLUE
+		color: #000;
+
+		}
+
+	&.footer {
+		@include font-size(12);
+		@include line-height(16);
+		@include font-weight(medium);
+
+		// Un-comment and remove black once once the blocks are in place
+		//color: #fff;
+		color: #000;
+
+
+		}
+
+	}
+h2 {
+	@include font-size(20);
+	@include line-height(26);
+	@include font-weight(medium);
+	&.banner {
+		@include font-size(30);
+		@include line-height(34);
+		}
+	}
+h3 {
+	@include font-size(20);
+	@include line-height(26);
+	@include font-weight(normal);
+	&.banner {
+		@include font-size(16);
+		@include line-height(18);
+		}
+	}
+
+// NOT REALLY SURE why these are labeled as "B1, B2, B3, etc in the DSM"
+// NEED TO reach out to Prohpet and/or Rob to get this answer
+// NEED TO determine what is the BASELINE FONT SIZE / COLOR for the body tag
+
+p {
+	// Needs to be used in a button selector
+	// Paragraph selector used here for demo purposes
+	&.button {
+		@include font-size(16);
+		@include line-height(20);
+		@include font-weight(medium);
+		text-transform: uppercase;
+
+		&.banner {
+
+			// Un-comment this once the blocks are in place
+			color: #fff;
+			
+			}
+
+		}
+	&.b1, &.b2 {
+		@include font-size(16);
+		@include line-height(20);
+		}
+	&.b2 {
+		text-transform: uppercase;
+		@include font-weight(medium);
+		}
+	&.b3, &.b4, &.b5 {
+		@include font-size(12);
+		@include line-height(16);
+		}
+	&.b3, &.b4 {text-transform: uppercase;}
+	&.b4 {@include font-weight(medium);}
+	}
+
+
+
+
+
+
+

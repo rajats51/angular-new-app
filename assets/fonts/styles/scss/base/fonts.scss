@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+// All PNC Brand font versions belong to the "PNC Brand" family
+// Body class set to use PNC Brand as the default font
+// Setting properties such as "bold", "italic", etc will result in correct font file being used
+// Without proper grouping the browser will "fake" font rendering vs using the variant font file
+// Font files are specified in the proper order of preference, enforcing backwards compatibility
+
+@font-face {
+	font-family: 'PNC Brand';
+	font-weight: 400;
+	font-style: normal;
+	src:	url('/assets/fonts/PNCBrandReg.eot?#iefix');
+	src:	url('/assets/fonts/PNCBrandReg.eot?#iefix') format('embedded-opentype'),
+			url('/assets/fonts/PNCBrandReg.woff') format('woff'),
+			url('/assets/fonts/PNCBrandReg.ttf') format('truetype'),
+			url('/assets/fonts/PNCBrandReg.svg') format('svg');
+	}
+	
+@font-face {
+	font-family: 'PNC Brand';
+	font-weight: 400;
+	font-style: italic;
+	src:	url('/assets/fonts/PNCBrandRegIta.eot?#iefix');
+	src:	url('/assets/fonts/PNCBrandRegIta.eot?#iefix') format('embedded-opentype'),
+			url('/assets/fonts/PNCBrandRegIta.woff') format('woff'),
+			url('/assets/fonts/PNCBrandRegIta.ttf') format('truetype'),
+			url('/assets/fonts/PNCBrandRegIta.svg') format('svg');
+	}
+
+@font-face {
+	font-family: 'PNC Brand';
+	font-weight: 700;
+	font-style: normal;
+	src:	url('/assets/fonts/PNCBrandBol.eot?#iefix');
+	src:	url('/assets/fonts/PNCBrandBol.eot?#iefix') format('embedded-opentype'),
+			url('/assets/fonts/PNCBrandBol.woff') format('woff'),
+			url('/assets/fonts/PNCBrandBol.ttf') format('truetype'),
+			url('/assets/fonts/PNCBrandBol.svg') format('svg');
+	}
+
+@font-face {
+	font-family: 'PNC Brand';
+	font-weight: 700;
+	font-style: italic;
+	src:	url('/assets/fonts/PNCBrandBolIta.?#iefix');
+	src:	url('/assets/fonts/PNCBrandBolIta.eot?#iefix') format('embedded-opentype'),
+			url('/assets/fonts/PNCBrandBolIta.woff') format('woff'),
+			url('/assets/fonts/PNCBrandBolIta.ttf') format('truetype'),
+			url('/assets/fonts/PNCBrandBolIta.svg') format('svg');
+	}
+
+@font-face {
+	font-family: 'PNC Brand';
+	font-weight: 300;
+	font-style: normal;
+	src:	url('/assets/fonts/PNCBrandLig.eot?#iefix');
+	src:	url('/assets/fonts/PNCBrandLig.eot?#iefix') format('embedded-opentype'),
+			url('/assets/fonts/PNCBrandLig.woff') format('woff'),
+			url('/assets/fonts/PNCBrandLig.ttf') format('truetype'),
+			url('/assets/fonts/PNCBrandLig.svg') format('svg');
+	}
+
+@font-face {
+	font-family: 'PNC Brand';
+	font-weight: 300;
+	font-style: italic;
+	src:	url('/assets/fonts/PNCBrandLigIta.eot?#iefix');
+	src:	url('/assets/fonts/PNCBrandLigIta.eot?#iefix') format('embedded-opentype'),
+			url('/assets/fonts/PNCBrandLigIta.woff') format('woff'),
+			url('/assets/fonts/PNCBrandLigIta.ttf') format('truetype'),
+			url('/assets/fonts/PNCBrandLigIta.svg') format('svg');
+	}
+
+@font-face {
+	font-family: 'PNC Brand';
+	font-weight: 500;
+	font-style: normal;
+	src:	url('/assets/fonts/PNCBrandMed.eot?#iefix');
+	src:	url('/assets/fonts/PNCBrandMed.eot?#iefix') format('embedded-opentype'),
+			url('/assets/fonts/PNCBrandMed.woff') format('woff'),
+			url('/assets/fonts/PNCBrandMed.ttf') format('truetype'),
+			url('/assets/fonts/PNCBrandMed.svg') format('svg');
+	}
+
+@font-face {
+	font-family: 'PNC Brand';
+	font-weight: 500;
+	font-style: italic;
+	src:	url('/assets/fonts/PNCBrandMedIta.eot?#iefix');
+	src:	url('/assets/fonts/PNCBrandMedIta.eot?#iefix') format('embedded-opentype'),
+			url('/assets/fonts/PNCBrandMedIta.woff') format('woff'),
+			url('/assets/fonts/PNCBrandMedIta.ttf') format('truetype'),
+			url('/assets/fonts/PNCBrandMedIta.svg') format('svg');
+	}
+
+
+// TYPEOGRAPHY MIXINS
+
+// Declare PNC Brand font 
+// Body class set to this by default
+// Use this mixin to override within a component if necessary
+
+@mixin font-pncbrand() {font-family: 'PNC Brand', Arial, sans-serif !important;}
+
+// Declare font weights as a numerical value in rendered output
+// Prevents certain browsers which do not play nice with "light, medium" textual declarations
+// Numeical values always work more consistently across browsers
+
+@mixin font-weight($weight) {
+	@if $weight == 'light' {font-weight: 300;}
+	@if $weight == 'normal' {font-weight: 400;}
+	@if $weight == 'medium' {font-weight: 500;}
+	@if $weight == 'bold' {font-weight: 700;}
+	}
+
+// Use these mixins to define font-size and line-height
+// html and body declaration allows developer to pass px value as argument
+// Rendered css will default to "rem" and fall back to "px" for unsupported browsers
+
+@mixin font-size($size) {
+	$rem: ($size / 10);
+	$px: $size;
+	font-size: #{$px + "px"};
+	font-size: #{$rem + "rem"};
+	}
+
+@mixin line-height($size) {
+	$rem: ($size / 10);
+	$px: $size;
+	line-height: #{$px + "px"};
+	line-height: #{$rem + "rem"};
+	}
