@@ -1,0 +1,46 @@
+@import "global_styles";
+.authform_container {
+  height: 55.6%;
+}
+
+.auth_progressbar {
+  margin: 0 auto;
+}
+
+.email_authform_container_welcome {
+  @include font-size(32);
+  @include line-height(41);
+  text-align: center;
+  min-width: 413px;
+  max-width: calc(100%-175px);
+  margin: 15px auto 30px;
+}
+
+.email_verify_reset {
+  color: $color-blue;
+  @include font-size(34);
+  @include font-weight(medium);
+  @include line-height(43);
+}
+
+.email_authform_container_instruction {
+  @include font-size(20);
+  @include line-height(40);
+  text-align: center;
+  margin: 2.5% auto 30px;
+}
+
+.pin-form {
+  margin: 3% auto;
+  max-width: 373px;
+  padding: 30px;
+}
+
+.pin-input {
+  margin-top: 3%;
+}
+
+.submit_button_container {
+  width: 100%;
+  text-align: left;
+}

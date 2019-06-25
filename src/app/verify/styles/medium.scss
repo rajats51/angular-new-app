@@ -1,0 +1,16 @@
+.verify-container {
+  flex-direction: column;
+}
+
+.briefcase-container {
+  .image {
+    width: 264px;
+    height: 264px;
+  }
+}
+
+.verify-content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

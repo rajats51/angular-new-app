@@ -1,0 +1,25 @@
+<div id="content-container" class="content-container">
+    <div id="welcome-container" [ngClass]="{'welcome-container': from ==='welcome','user_verify_reset':from==='reset' }" [innerHtml]="header_text">
+    </div>
+    <div id="progress-container" class="progress-container">
+        <app-progressbar [stepNames]="steps" [currentStepIndex]="0"></app-progressbar>
+    </div>
+    <div id="confirm-message" class="confirm-message">
+        Please verify your user name
+    </div>
+    <div id="form-container" class="form-container">
+        <form [formGroup]="userForm" class="form_holder" (ngSubmit)="verifyuser()">
+            <mat-form-field class="form-label">
+                <mat-icon matSuffix class="user-icon" svgIcon="username_match"></mat-icon>
+                <input matInput type="email" placeholder="User name" ([formControl])="emailFormControl" formControlName="testemail">
+                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                    Please enter a valid email address
+                </mat-error>
+                <mat-error *ngIf="emailFormControl.hasError('required')">
+                    Email is <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+        </form>
+        <button mat-button type="submit" [disabled]="!userForm.valid" id="submit-btn" class="button" (click)="verifyuser()">CONTINUE</button>
+    </div>
+</div>

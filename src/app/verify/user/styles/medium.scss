@@ -1,0 +1,69 @@
+@import "global_styles";
+
+.welcome-container {
+  height: 46px;
+  @include font-size(32);
+  @include font-weight(medium);
+  @include line-height(41);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.user_verify_reset{
+  color: $color-blue;
+  font-family: "PNC Brand";
+  @include font-size(34);
+  @include font-weight(medium);	
+  @include line-height(43);
+}
+
+.progress-container {
+  margin: 34px auto;
+}
+.confirm-message {
+  height: 40px;
+  width: 324px;
+  opacity: 0.7;
+  color: $color-black;
+  @include font-size(25);
+  @include font-weight(medium);
+  @include line-height(40);
+  margin: 0 auto 26px;
+}
+.form-container {
+  height: 227px;
+  width: 514px;
+  background-color: $color-white;
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 45px;
+}
+
+.form_holder {
+  padding: 23px 0px 23px 0px;
+}
+
+form {
+  & input {
+    color: $color-black;
+    @include font-size(18);
+    @include font-weight(normal);
+    @include line-height(23);
+    letter-spacing: 0.75px;
+    padding: 23px 0px 5px 0px;
+  }
+}
+
+.form-label {
+  height: 19px;
+  width: 74px;
+  color: rgba(0, 0, 0, 0.9);
+  @include font-size(14);
+  @include font-weight(medium);
+  @include line-height(18);
+  letter-spacing: 0.87px;
+}
+.user-icon {
+  bottom: 15px;
+}

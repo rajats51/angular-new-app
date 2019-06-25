@@ -1,0 +1,32 @@
+@import "global_styles";
+
+.verify-content-container {
+  text-align: left;
+}
+
+.authform_container {
+  margin-top: 6.4%;
+}
+
+.email_authform_container_welcome {
+  width: 100%;
+  @include font-size(40);
+  @include line-height(51);
+  margin-bottom: 30px;
+}
+
+.email_authform_container_instruction {
+  width: 100%;
+  @include font-size(20);
+  @include line-height(40);
+  margin: 35px 0;
+}
+
+.pin-form {
+  max-width: 430px;
+  padding: 40px 44px 44px 56px;
+}
+
+.pin {
+  border-radius: 0px;
+}

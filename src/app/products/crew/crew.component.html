@@ -1,0 +1,26 @@
+<div id="main-wrapper">
+
+    <div class="container" id="container">
+        <h2 id="card-name"> Commercial Card crew</h2>
+        <img id="list" class="list" src="../../assets/png/crewList.png" alt="crewList.png" />
+        <div class="crew-key" id="crew-key">
+            <span class="crew-status" id="crew-status-text">key:</span>
+            <img id="key-company" class="key-company" src="../assets/icons/key_company.svg" />
+            <span class="crew-company" id="crew-company"> Your company </span>
+            <img id="key-pnc" class="key-pnc" src="../assets/icons/key_pnc.svg" />
+            <span class="company" id="company"> PNC </span>
+        </div>
+        <div class="circle-container" id="circle-container">
+            <div class="circle" id="circle">
+                    <div *ngFor="let item of items; let ind= index" class="circle-container wrapper">
+                        <img class="crew-image" [src]="item.image" [alt]="item.image_id">
+                        <img class="star-icon"  [src]="item.subImage" *ngIf="item.subImage !== ''">
+                        <div class="text-name">
+                            <h5 class="crew-name" id="crew-name"> {{item.name}} </h5>
+                            <h6 class="crew-role" id="crew-role"> {{item.role}} </h6>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

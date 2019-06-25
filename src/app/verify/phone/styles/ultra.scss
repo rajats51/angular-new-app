@@ -1,0 +1,19 @@
+@import "global_styles";
+
+.verify-content-container {
+  text-align: left;
+}
+
+.authform_container {
+  margin-top: 6.4%;
+}
+
+.phone_authform_container_welcome {
+  @include font-size(40);
+  @include font-weight(medium);
+  @include line-height(51);
+}
+
+.pin-form {
+  max-width: 490px;
+}

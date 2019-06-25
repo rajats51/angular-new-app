@@ -1,0 +1,50 @@
+@import "global_styles";
+
+.authform_container {
+  height: 55.6%;
+}
+
+.auth_progressbar {
+  margin: 0 auto;
+}
+
+.phone_authform_container_welcome {
+  color: $color-blue;
+  @include font-size(32);
+  @include font-weight(medium);
+  @include line-height(41);
+  text-align: center;
+  min-width: 413px;
+  max-width: calc(100%-175px);
+  margin: 2.5% auto 30px;
+}
+
+.phone_verify_reset {
+  color: $color-blue;
+  text-align: center;
+  min-width: 413px;
+  margin: 2.5% auto 30px;
+  @include font-size(34);
+  @include font-weight(medium);
+  @include line-height(43);
+}
+
+.phone_authform_container_instruction {
+  text-align: center;
+  margin: 2.5% auto 30px;
+}
+
+.pin-form {
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin-top: 3%;
+  // margin-bottom: 20.7%;
+  margin: 3% auto;
+  max-width: 373px;
+  padding: 30px;
+}
+
+.submit_button_container {
+  width: 100%;
+  text-align: left;
+}

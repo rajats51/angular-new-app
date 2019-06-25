@@ -1,0 +1,29 @@
+<div class="tab-menu-container">
+    <mat-tab-group  disableRipple="true" (selectedTabChange)="swapTabs($event)"  [(selectedIndex)]="selectedIndex">
+        <mat-tab *ngFor="let tab of tabMetaData"  >
+            <ng-template mat-tab-label>
+                <div class="mat-tab-label-content">
+                    <mat-icon class="tab-icon" [svgIcon]="tab.svg"></mat-icon>
+                    <span class="tab-label"> {{tab.label}}</span>
+                </div>
+            </ng-template>
+        </mat-tab>
+    </mat-tab-group>
+</div>
+
+
+
+<div class= "small-menu-container" style="width:100%;">
+    <mat-form-field >
+        <mat-select matNativeControl id="solution-select-small" [formControl]="selectedTab" (selectionChange)="swapTabs($event)">
+            <mat-select-trigger>
+                <mat-icon [svgIcon]="selectedTab.value.svg"></mat-icon>
+                <div class="selectTab"> {{selectedTab.value.label}}</div>
+            </mat-select-trigger>
+           
+            <mat-option *ngFor="let tab of tabMetaData " [value]="tab">
+                <mat-icon [svgIcon]="tab.svg" matPrefix></mat-icon> {{tab.label}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>

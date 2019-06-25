@@ -1,0 +1,9 @@
+@import "global_styles";
+
+.close-button{
+    position: relative;
+    float: right;   
+	color: $color-dark-blue;
+    top: -10px;
+    right: -10px;
+}

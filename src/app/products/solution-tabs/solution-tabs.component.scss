@@ -1,0 +1,180 @@
+@import "global_styles";
+
+.mat-tab-header{
+    border:0px;
+    margin:0px;
+    padding:0px;
+}
+
+.mat-tab-group{
+    
+    color: #ffffff;	 
+    background:linear-gradient(275deg, #00A1D6 0%, $color-blue 100%);
+    padding:0;
+    margin-bottom:0px;
+    width:100%;
+    border-top: solid white 1px;
+}
+
+.tab-menu-container{
+    margin-left: 0px !important;
+}
+
+
+.mat-ink-bar{
+    background-color: #ffffff !important;
+    border:none;
+    height: 7px !important; 
+    bottom: -18px !important;
+    padding-right:5px;
+    padding-bottom:0px;
+    margin-bottom:0px;
+
+ }
+ .small-menu-container .mat-form-field-appearance-legacy .mat-form-field-underline{
+     display: none;
+ }
+ 
+ .mat-tab-label{
+    color:#FFFFFF;
+    background-color: transparent;
+    height: 24px !important;
+    @include font-pncbrand();
+    @include font-size(16);
+    @include font-weight(medium);
+    min-width: 46px !important;
+    opacity: 1 !important;
+    letter-spacing: 0.69px !important;
+    padding: 0px !important;
+    margin-right: 50px !important;
+ }
+
+.mat-tab-label-active{
+    @include font-weight(bold);
+    letter-spacing: 0.69px !important;
+}
+
+.tab-label{
+    @include font-size(16);
+    margin: 5px 0 0 5px;
+}
+
+.mat-icon{
+    height: 24px !important;
+    width: 24px !important;
+    vertical-align: bottom;
+}
+.mat-tab-label-container{
+    padding-top: 14px !important;
+    padding-bottom: 17px !important;
+    margin-left: 20px;
+}
+
+.small-dropdown{
+    visibility:visible;
+}
+
+// .dropdown-row{
+//    border-bottom:solid white 2px;
+//    &:hover{
+//     color:black;
+// }
+// }
+
+// .dropdown-icon{
+//     color:black;
+
+//     &:hover{
+//         color:black;
+//     }
+// }
+
+.mat-option{
+    background-color: $color-blue;
+    color:white;
+
+    &:hover{
+        background-color: $color-blue !important;
+    }
+}
+
+.small-menu-container{
+    display: none;
+}
+
+.small-menu-container .mat-select-trigger{
+    padding-left: 20px !important;
+}
+.mat-select-value{
+    display: contents !important;
+}
+.mat-select-arrow{
+    color: #ffffff;
+    height: 10px !important;	
+    width: 14px !important;
+    margin: 0 7px !important;
+    border-left: 9px solid transparent !important ;
+    border-right: 9px solid transparent !important;
+    border-top: 11px solid !important;
+   
+}
+.mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+    color: #FFFFFF !important;
+
+}
+
+.mat-form-field{
+    color:white;
+}
+.mat-from-field-flex{
+    padding-left: 10px !important;
+}
+
+.mat-form-field-wrapper{
+    padding: 16 0 14 0px !important;
+}
+
+.dropdown-container{
+    // width:100%;
+    background:linear-gradient(275deg, #00A1D6 0%, $color-blue 100%);
+}
+.mat-select-value-text{
+    color: #FFFFFF;
+}
+.selectTab{
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 9px;
+}
+
+
+@include medium{
+    .tab-label{
+        @include font-size(15);
+    }
+    .mat-ink-bar{
+      height: 6px !important;
+    }
+    .mat-tab-label{
+        margin-right: 30px !important;
+    }
+    
+}
+@include large{   
+    .mat-tab-label{
+        margin-right: 40px !important;
+    }
+}
+
+@include small{
+   
+    .small-menu-container{
+        display: flex;
+        border-top:1px solid #ffffff !important;
+        background:linear-gradient(275deg, #00A1D6 0%, $color-blue 100%);
+    }
+    .tab-menu-container{
+        display: none;
+    }
+}

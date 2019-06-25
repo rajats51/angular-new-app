@@ -1,0 +1,271 @@
+@import "global_styles";
+
+.task-container{
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1; 
+    height:100%;
+}
+
+.task-board{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-grow: 1; 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+    .mat-form-field .mat-select .mat-select-trigger {
+      display: block !important;
+    }
+}
+   
+.column {
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border-right: solid 1px $color-gray-4;
+  flex-grow: 1;
+  padding-left: 2rem;
+  border-bottom:none;
+}
+
+.row {
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.div-see-more {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+}
+
+.column-noborder {
+  border: none;
+}
+
+.column-header {
+  color: $color-blue;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 2rem;
+  margin-left: 5px;
+}
+
+.task-count {
+  color: $color-gray-2;
+}
+
+.more-cards-block {
+  height: 80px;
+  margin: 5px;
+  border-radius: 0px !important;
+  border: 1px solid #B4B4B4;
+  box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.1);
+  padding-top: 18px;
+  padding-bottom: 18px;
+  .extra-cards-count {
+    height: 41px;
+    width: 41px;
+    border-radius: 40px;
+    color: $color-white;
+    background-color: $color-gray-3;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .title {
+    height: 20px;	
+    width: 168px;	
+    color: $color-black;	
+    @include font-pncbrand();
+    @include font-size(15);
+    @include font-weight(medium);
+    @include line-height(20);
+  }
+}
+
+.text-see-more {
+  height: 27px;
+  width: 181px;
+  color: $color-blue;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.no-task {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.task-board-sm {
+  .mat-select {
+    width: 100%;
+    .select-task-trigger {
+      display: block;
+      .selectTask {
+        width: 100%;
+      }
+    }
+    .mat-select-arrow {
+      display: none;
+    }
+    .select-task-trigger {
+      display: block;
+    }
+  }
+  .task-select-trigger-lbl {
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-black;
+  }
+  .task-select-trigger-icon {
+    color: $color-blue;
+    font-size: 16px;
+    font-weight: 500;
+    float: right;
+  }
+  .task-select-trigger-lbl {
+    color: $color-gray-3;
+    color: $color-black;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+#task-select-small > div.mat-select-trigger {
+  display: block !important;
+}
+
+#task-select-small {
+  ::ng-deep .mat-select-arrow-wrapper {
+    display: none;
+  }
+  ::ng-deep .mat-select-trigger {
+    display: block;
+  }
+}
+
+::ng-deep .task-select-options.mat-option {
+  background-color: $color-white;
+  color: $color-black;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.selected-task-list {
+  margin-top: 2rem;
+}
+@include ultra{
+  
+      @import "./styles/ultra";
+  }
+  @include xtralarge{
+      @import "./styles/xtralarge";
+  }
+  @include large{
+      @import "./styles/large";
+  }
+  @include medium{
+      @import "./styles/medium";
+      
+  }
+  @include small{
+      @import "./styles/small";
+  }
+
+//   &.to-do {
+//     border-left: 2px solid $color-blue;
+
+//     .status {
+//       color: $color-blue;
+//     }
+//   }
+
+//   &.complete {
+//     border-left: 2px solid $color-green;
+
+//     .status {
+//       color: $color-green;
+//     }
+//   }
+// }
+
+
+.avatar-img{
+    height: 38px;
+    width: 38px;
+  
+}
+
+.date-icon{
+  height: 16px !important;
+  width:16px !important;
+}
+
+.message-icon{
+  height: 16px !important;
+  width:16px !important;
+}
+// .todo-status, .progress-status{
+//     height: 21px;	
+//     width: 76px;	
+//     color: #0068AC;	
+//     @include font-pncbrand();
+//     @include font-size(12);	
+//     @include font-weight(medium);	
+//     line-height: 20px;
+// }
+
+// .todo-title, .progress-title, .completed-title, .blocked-title{
+//     height: 22px;
+//     width: 203px;
+//     color: #000000;
+//     font-family: "PNC Brand";
+//     font-size: 16px;
+//     font-weight: 500;
+//     line-height: 20px;
+  
+// }
+
+// .completed-status{
+//     height: 21px;
+//     width: 67px;
+//     color: #6BB536;
+//     font-family: "PNC Brand";
+//     font-size: 12px;
+//     font-weight: 500;
+//     line-height: 20px;
+  
+// }
+// .blocked-status{
+//     height: 21px;	
+//     width: 57px;	
+//     color: #CE0000;	
+//     font-family: "PNC Brand";	
+//     font-size: 12px;	
+//     font-weight: 500;	
+//     line-height: 20px;
+// }
+
+// .left{
+//   margin-bottom: 14px;
+// }
+
+// .right{
+//   margin-bottom: 7px;
+// }

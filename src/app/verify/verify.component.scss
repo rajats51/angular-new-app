@@ -1,0 +1,47 @@
+@import "global_styles";
+
+.root-content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.verify-container {
+  padding-bottom: 200px;
+  padding-top: 32px;
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.briefcase-container {
+  display: flex;
+  flex: 0.4 auto;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.verify-content-container {
+  flex: 0.6 auto;
+  display: flex;
+  justify-content: center;
+}
+
+@include ultra {
+  @import "./styles/ultra.scss";
+}
+
+@include xtralarge {
+  @import "./styles/xtralarge.scss";
+}
+
+@include large {
+  @import "./styles/large.scss";
+}
+
+@include medium {
+  @import "./styles/medium.scss";
+}
+
+@include small {
+  @import "./styles/small.scss";
+}

@@ -1,0 +1,27 @@
+@import "global_styles";
+
+.container{
+    margin-top: 28px;
+    background-color: #fff;
+}
+
+
+@include ultra{
+
+    @import "./styles/ultra";
+}
+@include xtralarge{
+    @import "./styles/xtralarge";
+}
+@include large{
+    @import "./styles/large";
+}
+@include medium{
+    @import "./styles/medium";
+    
+}
+@include small{
+    // @import "./styles/small";
+}
+
+

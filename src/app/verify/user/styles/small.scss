@@ -1,0 +1,78 @@
+@import "global_styles";
+mat-icon {
+  display: none;
+}
+
+.briefcase-container {
+  display: none;
+}
+
+.welcome-container {
+  display: block;
+  color: $color-blue;
+  @include font-size(26);
+  @include font-weight(medium);
+  @include line-height(31);
+}
+
+.progress-container {
+  margin: 34px auto;
+  margin-left: -15px;
+  .sm-hide {
+    display: none;
+  }
+}
+
+.confirm-message {
+  height: 23px;
+  opacity: 0.73;
+  color: $color-black;
+  @include font-size(18);
+  @include font-weight(medium);
+  @include line-height(23);
+  margin: 0 auto 18px;
+}
+
+.form-container {
+  height: 227px;
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0;
+  text-align: left;
+  padding: 0;
+}
+
+form {
+  & input {
+    color: $color-black;
+    @include font-size(18);
+    @include font-weight(normal);
+    @include line-height(23);
+    letter-spacing: 0.75px;
+    padding: 16px 0px 11px 0px;
+  }
+}
+
+.form-label {
+  height: 19px;
+  color: rgba(0, 0, 0, 0.9);
+  @include font-size(14);
+  @include font-weight(medium);
+  @include line-height(18);
+  letter-spacing: 0.87px;
+}
+
+.user-icon {
+  display: none;
+}
+
+.button {
+  width: 100%;
+  margin-top: 32px;
+}
+
+@media only screen and(max-width: 380px) {
+  .welcome-container {
+    white-space: pre-line;
+  }
+}

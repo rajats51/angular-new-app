@@ -1,0 +1,18 @@
+<div class="root-content-container">
+    <app-pre-header></app-pre-header>
+    <div class="verify-container"
+         (window:resize)="getImageWidthPixels($event)">
+        <div class="briefcase-container">
+            <img class="image"
+                 type="briefcase"
+                 alt="image"
+                 id="briefcase-img"
+                 #briefcaseimg
+                 src="assets/svg/case.svg">
+        </div>
+        <div class="verify-content-container">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <app-pre-footer></app-pre-footer>
+</div>

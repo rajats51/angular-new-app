@@ -1,0 +1,111 @@
+@import "global_styles";
+
+.container{
+    margin:28px 20px 137px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.25);
+    padding: 20px 0;
+}
+.circle-container{
+    margin: 0px 17px;
+}
+
+.main-wrapper{
+    height: 726px;
+    width: 600px;	
+}
+
+h2{
+    margin: 0px 26px 20px;
+    height: 40px;
+    width: 313px;
+    color:$color-blue;
+    @include font-pncbrand();
+    @include font-size(30);
+    @include font-weight(medium);
+    @include line-height(34);  
+}
+.crew-key{
+    margin-left: 26px;
+    margin-bottom: 25px;
+    height: 40px;	
+    width: 365px;	
+    color: $color-black;
+    @include font-pncbrand();
+    @include font-size(16);
+    @include font-weight(medium);
+    @include line-height(20);
+}
+
+.list {
+    float: right;
+    margin-top: -55px;
+    margin-right: 30px;
+    height: 42px;
+    width: 42px;	
+}
+
+.crew-image {
+   min-width: 140px;
+   min-height:140px;
+   width:100%;
+    
+}
+.crew-status{
+    margin-right:12px;
+}
+.crew-company{
+    margin-right:12px;
+}
+
+.star-icon{
+    display: none;
+}
+
+
+.circle {
+    display: flex;
+    flex-wrap: wrap;
+    height:100%;
+}
+
+.wrapper{
+    max-width: 23%;
+    margin: 0 2.5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 140px;
+}
+
+.text-name {
+    width: 100%;
+}
+
+@media (max-width: 832px) {
+    .wrapper{
+        margin: 0 5% 10%;
+    }
+    .text-name {
+        white-space: nowrap;
+    }
+}
+h5{
+    margin-top: 12px;
+    margin-bottom: 0px;
+    width:100%;
+    color:$color-blue;
+    @include font-weight(medium);
+    @include font-size(16);
+    @include line-height(20);
+
+}
+
+h6{
+    width: 100%;
+    color: $color-blue;	
+    @include font-weight(normal);
+    @include font-size(16);
+    @include line-height(20);
+    margin:0 auto;
+}

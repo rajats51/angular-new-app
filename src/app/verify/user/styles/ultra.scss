@@ -1,0 +1,54 @@
+@import "global_styles";
+
+.welcome-container {
+  height: 58px;
+  color: $color-blue;
+  @include font-size(40);
+  @include font-weight(medium);
+  @include line-height(51);
+}
+
+.confirm-message {
+  height: 40px;
+  opacity: 0.9;
+  color: $color-black;
+  @include font-size(20);
+  @include font-weight(medium);
+  @include line-height(40);
+  margin-bottom: 26px;
+}
+
+.form-container {
+  height: 248px;
+  width: 542px;
+  background-color: $color-white;
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 0px 47px;
+}
+
+.form_holder {
+  padding: 30px 0px 24px 0px;
+}
+
+.form-label {
+  height: 19px;
+  width: 74px;
+  color: rgba(0, 0, 0, 0.9);
+  @include font-size(14);
+  @include font-weight(medium);
+  @include line-height(18);
+  letter-spacing: 0.87px;
+}
+
+form {
+  & input {
+    color: $color-black;
+    @include font-size(18);
+    @include font-weight(normal);
+    @include line-height(23);
+    letter-spacing: 0.75px;
+    padding: 24px 0px 5px 0px;
+  }
+}
+

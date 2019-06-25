@@ -1,0 +1,92 @@
+@import "global_styles";
+
+.task-board-lg {
+    display: none;
+}
+
+.task-board-sm {
+    .task-board-content {
+        justify-content: left;
+        .content-header {
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 50px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+        .content-header > * {
+            width: 100%;
+        }
+    }
+
+    mat-select {
+        width: 60%;
+        height: 100%;
+        .mat-select-value-text {
+            color: $color-black;
+        }
+    }
+    .mat-form-field-appearance-legacy .mat-form-field-underline{
+        display: block !important;
+    }
+}
+.pl-2 {
+    padding-left: 2rem;
+}
+.pr-2 {
+    padding-right: 2rem;
+}
+.row {
+    width: 100%;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    .col {
+        display: inline-block;
+        &.sm-1 {
+            width: 8.33%;
+        }
+        &.sm-2 {
+            width: 16.66%;
+        }
+        &.sm-3 {
+            width: 25%;
+        }
+        &.sm-4 {
+            width: 33.33%;
+        }
+        &.sm-5 {
+            width: 41.66%;
+        }
+        &.sm-6 {
+            width: 50%;
+        }
+        &.sm-7 {
+            width: 58.33%;
+        }
+        &.sm-8 {
+            width: 66.66%;
+        }
+        &.sm-9 {
+            width: 75%;
+        }
+        &.sm-10 {
+            width: 83.33%;
+        }
+        &.sm-11 {
+            width: 91.66%;
+        }
+        &.sm-12 {
+            width: 100%;
+        }
+    }
+}
+.mat-form-field {
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+.selected-task-list {
+    padding-left: 0;
+    padding-right: 0;
+  }

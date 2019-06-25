@@ -1,0 +1,68 @@
+@import "global_styles";
+
+.task-board{
+    flex-direction: column;
+
+}
+
+.column{
+    width:100% !important;
+    border-bottom: solid 1px $color-gray-4;  
+    border-right:none;
+    margin-bottom:2rem; 
+}
+
+.task-board-lg {
+    display: none;
+}
+
+.row {
+    width: 100%;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    .col {
+        display: inline-block;
+        &.xs-1 {
+            width: 8.33%;
+        }
+        &.xs-2 {
+            width: 16.66%;
+        }
+        &.xs-3 {
+            width: 25%;
+        }
+        &.xs-4 {
+            width: 33.33%;
+        }
+        &.xs-5 {
+            width: 41.66%;
+        }
+        &.xs-6 {
+            width: 50%;
+        }
+        &.xs-7 {
+            width: 58.33%;
+        }
+        &.xs-8 {
+            width: 66.66%;
+        }
+        &.xs-9 {
+            width: 75%;
+        }
+        &.xs-10 {
+            width: 83.33%;
+        }
+        &.xs-11 {
+            width: 91.66%;
+        }
+        &.xs-12 {
+            width: 100%;
+        }
+    }
+}
+
+.selected-task-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
