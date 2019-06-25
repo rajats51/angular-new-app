@@ -4,7 +4,7 @@ import { ApiService } from '../../common/services/api-service/api.service';
 @Component({
   selector: 'app-activity',
   templateUrl: './activity.component.html',
-  styleUrls: ['./activity.component.scss']
+  styleUrls: ['./activity.component']
 })
 export class ActivityComponent implements OnInit {
   public activity: any;

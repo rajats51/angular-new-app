@@ -13,7 +13,7 @@ import { ModalMetadata } from '../common/libraries/modal-utils';
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
-  styleUrls: ['./login-page.component.scss']
+  styleUrls: ['./login-page.component']
 })
 export class LoginPageComponent implements OnInit {
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);

@@ -3,7 +3,7 @@ import { Component, OnInit, ViewChild, ElementRef} from '@angular/core';
 @Component({
   selector: 'app-verify',
   templateUrl: './verify.component.html',
-  styleUrls: ['./verify.component.scss']
+  styleUrls: ['./verify.component']
 })
 export class VerifyComponent implements OnInit {
   @ViewChild('briefcaseimg') breifcaseImage: ElementRef;

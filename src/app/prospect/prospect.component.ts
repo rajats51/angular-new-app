@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-prospect',
   templateUrl: './prospect.component.html',
-  styleUrls: ['./prospect.component.scss']
+  styleUrls: ['./prospect.component']
 })
 export class ProspectComponent implements OnInit {
   // pushRightClass = 'push-right';

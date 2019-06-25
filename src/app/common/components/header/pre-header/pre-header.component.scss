@@ -1,5 +1,5 @@
 @import 'global_styles';
-@import '../styles/headers.scss';
+@import '../styles/headers';
 
 .sm-only { 
     display: none 
@@ -25,21 +25,21 @@
 }
 
 @include ultra{
-    @import './styles/ulra.scss';
+    @import './styles/ulra';
 }
 
 @include xtralarge{
-    @import './styles/xtralarge.scss';
+    @import './styles/xtralarge';
 }
 
 @include large{
-    @import './styles/large.scss';
+    @import './styles/large';
 }
 
    @include medium{
-    @import './styles/medium.scss';
+    @import './styles/medium';
 }
 
 @include small {
-    @import './styles/small.scss';
+    @import './styles/small';
 }

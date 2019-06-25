@@ -7,7 +7,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 @Component({
   selector: 'app-password-success-popup',
   templateUrl: './password-success-popup.component.html',
-  styleUrls: ['./password-success-popup.component.scss']
+  styleUrls: ['./password-success-popup.component']
 })
 export class PasswordSuccessPopupComponent implements OnInit {
   @ViewChild('passwordsuccesspopup')pwsPopup:ElementRef;

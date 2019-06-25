@@ -5,7 +5,7 @@ import {HttpResponse} from '@angular/common/http';
 @Component({
   selector: 'app-pre-footer',
   templateUrl: './pre-footer.component.html',
-  styleUrls: ['./pre-footer.component.scss']
+  styleUrls: ['./pre-footer.component']
 })
 export class PreFooterComponent implements OnInit {
 

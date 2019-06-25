@@ -13,7 +13,7 @@ export interface LabelData {
 @Component({
   selector: 'app-task-board',
   templateUrl: './task-board.component.html',
-  styleUrls: ['./task-board.component.scss']
+  styleUrls: ['./task-board.component']
 })
 export class TaskBoardComponent implements OnInit {
   selectedTask = new FormControl();

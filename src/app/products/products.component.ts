@@ -6,7 +6,7 @@ import {MatIconRegistry} from '@angular/material';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.scss'],
+  styleUrls: ['./products.component'],
   
 })
 export class ProductsComponent implements OnInit {

@@ -7,7 +7,7 @@ import { MatIconRegistry } from '@angular/material';
 @Component({
   selector: 'app-forgot-username-modal',
   templateUrl: './forgot-username-modal.component.html',
-  styleUrls: ['./forgot-username-modal.component.scss']
+  styleUrls: ['./forgot-username-modal.component']
 })
 export class ForgotUsernameModalComponent implements OnInit {
 

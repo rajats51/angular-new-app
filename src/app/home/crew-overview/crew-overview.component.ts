@@ -4,7 +4,7 @@ import { ApiService } from '../../common/services/api-service/api.service';
 @Component({
   selector: 'app-crew-overview',
   templateUrl: './crew-overview.component.html',
-  styleUrls: ['./crew-overview.component.scss']
+  styleUrls: ['./crew-overview.component']
 })
 export class CrewOverviewComponent implements OnInit {
 public crew: any;

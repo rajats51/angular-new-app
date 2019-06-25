@@ -19,7 +19,7 @@ export interface LabelData {
 @Component({
   selector: 'app-solution-tabs',
   templateUrl: './solution-tabs.component.html',
-  styleUrls: ['./solution-tabs.component.scss'],
+  styleUrls: ['./solution-tabs.component'],
   encapsulation: ViewEncapsulation.None
 })
 export class SolutionTabsComponent implements OnInit {

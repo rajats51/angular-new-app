@@ -10,7 +10,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-create-password',
   templateUrl: './create-password.component.html',
-  styleUrls: ['./create-password.component.scss']
+  styleUrls: ['./create-password.component']
 })
 export class CreatePasswordComponent implements OnInit {
   public passwordForm: FormGroup;

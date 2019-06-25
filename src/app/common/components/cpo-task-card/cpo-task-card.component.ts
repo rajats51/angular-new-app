@@ -5,7 +5,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 @Component({
   selector: 'app-cpo-task-card',
   templateUrl: './cpo-task-card.component.html',
-  styleUrls: ['./cpo-task-card.component.scss']
+  styleUrls: ['./cpo-task-card.component']
 })
 export class CpoTaskCardComponent implements OnInit {
 

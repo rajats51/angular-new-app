@@ -7,7 +7,7 @@ import { UtilityService } from '../../common/services/date/utility.service';
 @Component({
   selector: 'app-authentication-code',
   templateUrl: './authentication-code.component.html',
-  styleUrls: ['./authentication-code.component.scss']
+  styleUrls: ['./authentication-code.component']
 })
 export class AuthenticationCodeComponent implements OnInit {
   steps: string[] = [

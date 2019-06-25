@@ -16,7 +16,7 @@ import { ApiService } from '../../common/services/api-service/api.service';
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
-  styleUrls: ['./user.component.scss']
+  styleUrls: ['./user.component']
 })
 export class UserComponent implements OnInit {
   public userForm: FormGroup;

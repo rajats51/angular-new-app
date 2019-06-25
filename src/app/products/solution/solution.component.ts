@@ -4,7 +4,7 @@ import { ApiService } from '../../common/services/api-service/api.service';
 @Component({
   selector: 'app-solution',
   templateUrl: './solution.component.html',
-  styleUrls: ['./solution.component.scss']
+  styleUrls: ['./solution.component']
 })
 export class SolutionComponent implements OnInit {
   public details: any;

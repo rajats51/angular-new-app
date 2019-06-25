@@ -4,7 +4,7 @@ import { ApiService } from '../../common/services/api-service/api.service';
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
-  styleUrls: ['./timeline.component.scss']
+  styleUrls: ['./timeline.component']
 })
 export class TimelineComponent implements OnInit {
  public timeline: any;

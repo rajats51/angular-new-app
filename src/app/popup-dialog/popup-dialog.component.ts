@@ -7,7 +7,7 @@ import { PasswordSuccessPopupComponent } from 'src/app/password/password-success
 @Component({
   selector: 'app-popup-dialog',
   templateUrl: './popup-dialog.component.html',
-  styleUrls: ['./popup-dialog.component.scss']
+  styleUrls: ['./popup-dialog.component']
 })
 
 export class PopupDialogComponent implements OnInit {

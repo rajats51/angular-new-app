@@ -4,7 +4,7 @@ import {RouterModule, Router } from '@angular/router';
 @Component({
     selector: 'app-add-solution',
     templateUrl: './add-solution.component.html',
-    styleUrls: ['./add-solution.component.scss']
+    styleUrls: ['./add-solution.component']
 })
 export class AddSolutionComponent implements OnInit {
 

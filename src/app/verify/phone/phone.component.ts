@@ -6,7 +6,7 @@ import { ApiService } from '../../common/services/api-service/api.service';
 @Component({
   selector: 'app-phone',
   templateUrl: './phone.component.html',
-  styleUrls: ['./phone.component.scss']
+  styleUrls: ['./phone.component']
 })
 export class PhoneComponent implements OnInit {
 

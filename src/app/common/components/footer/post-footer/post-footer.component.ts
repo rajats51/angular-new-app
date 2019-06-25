@@ -6,7 +6,7 @@ import {HttpResponse} from '@angular/common/http';
 @Component({
   selector: 'app-post-footer',
   templateUrl: './post-footer.component.html',
-  styleUrls: ['./post-footer.component.scss']
+  styleUrls: ['./post-footer.component']
 })
 export class PostFooterComponent implements OnInit {
 

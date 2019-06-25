@@ -6,7 +6,7 @@ import {MatIconRegistry} from '@angular/material';
 @Component({
   selector: 'app-secondary-banner',
   templateUrl: './secondary-banner.component.html',
-  styleUrls: ['./secondary-banner.component.scss'],
+  styleUrls: ['./secondary-banner.component'],
   encapsulation: ViewEncapsulation.None
 })
 export class SecondaryBannerComponent implements OnInit {
