@@ -1,0 +1,39 @@
+.banner-title{
+    @include font-size(40);
+    width: 320px;
+}
+.banner-body{
+    display: flex;
+    flex-direction: column;
+}
+.bg-banner{
+    padding-bottom:0px;
+}
+.workflow-layout{
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+.est-label{
+    width: 250px;
+    text-align: right;
+}
+.workflow-success{
+    width: 90px;
+}
+.workflow-error{
+    width: 47px;
+}
+.workflow-not-started{
+    width: 60px;
+}
+.banner-title-content .mat-icon{
+    margin-top: 0px !important;
+ }
+ .avatar-component{
+    margin-top:48px;
+    margin-right:0px;
+    margin-left:20px;
+    margin-bottom:18px;
+    display: flex;
+    align-content: flex-start;
+}

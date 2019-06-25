@@ -1,0 +1,33 @@
+.bg_footer {
+  background-color: $color-blue;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .copyright {
+    color: #ffffff;
+    @include font-size(13px);
+    @include font-weight(500);
+    @include line-height(16px);
+  }
+
+  .reflinks {
+    text-align: center;
+  }
+
+  .link {
+    color: #ffffff;
+    @include font-size(13px);
+    @include font-weight(bold);
+    @include line-height(16px);
+    text-align: center;
+  }
+
+  .span-divider {
+    @include line-height(16px);
+    color: #ffffff;
+    padding: 0 24px;
+  }
+}

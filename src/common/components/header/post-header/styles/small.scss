@@ -1,0 +1,23 @@
+  .logo{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container {
+    .logo{ 
+      max-width:350px;
+      width: 108px;
+      content: url(/assets/icons/pinacle-blue-mobile.svg);
+      padding-top: 1px;
+    }
+    .help_menu {
+        display: none;
+      }
+    .operatorname {
+        display: none;
+    }
+}
+
+.header{
+  box-shadow: 0px 0px 0px 0.5px rgba(53, 50, 50, 0.2);
+}

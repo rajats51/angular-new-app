@@ -1,0 +1,16 @@
+.welcometext{
+    @include font-size(41);
+    letter-spacing: 0.27px;
+}
+.avatar-banner{
+    margin-top: 5px !important;
+}
+.tab-menu-label{
+    @include font-size(20);
+    padding-top: 2px;
+}
+
+.avatar-component{
+    // margin-top:15px;
+    margin-right:22px;
+}

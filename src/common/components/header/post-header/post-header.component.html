@@ -1,0 +1,22 @@
+<!--<div class="header-wrapper"></div> -->
+<div class="fixed-top header split-header">
+    <nav class="navbar nav-burger-holder">
+      <button class="hamburger hamburger--slider tag-hamburger" id="menu_icon" aria-label="toggle_menu" (click)="toggleSidebar()">
+        <img [(src)]="iconSrc" />
+      </button>
+    </nav>
+    <nav class="navbar nav-other-holder" (click)="headerToggle()">
+      <div class ="header-container">
+        <img class="logo" alt="Logo" id="header-logo" src="assets/icons/outline.svg">
+          <label class="operatorname" id="operator-name">{{name}}</label>
+            <a href="#" class="avatar" id="account-link">
+              <img alt="Account" id="account-icon" src="assets/svg/avatar-off.svg">
+            </a>
+            <a href="#" class="help_menu" id="help-link">
+              <img class="help" alt="Help" id="help-icon" src="assets/svg/help-off.svg">
+            </a>
+      </div>
+    </nav>
+  </div>
+  
+  <div class="side-bar-overlay" (click)="toggleSidebar()"></div>
