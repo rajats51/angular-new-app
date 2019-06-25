@@ -1,0 +1,14 @@
+@import "global_styles";
+
+.example-card {
+  width: 23%;
+  margin: 14px 1%;
+}
+
+.solution-title {
+  margin: 0 auto;
+  color: $color-blue;
+  @include font-size(30);
+  @include font-weight(medium);
+  @include line-height(26);
+}

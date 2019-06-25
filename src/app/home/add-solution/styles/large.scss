@@ -1,0 +1,13 @@
+@import "global_styles";
+
+.example-card {
+  width: 31.3%;
+  margin: 14px 1%;
+}
+
+.solution-title {
+  margin: 0 auto;
+  color: #0068AC;
+  @include font-size(30);
+  @include font-weight(medium);
+}

@@ -1,0 +1,51 @@
+@import "global_styles";
+
+.container {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 10px 20px 125px;
+}
+.example-card {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0px;
+  border: 1px solid #e8e8e8 !important;
+  background-color: #ffffff;
+}
+.solution-content {
+  width: 100%;
+  text-align: left !important;
+  margin-top: 34px;
+}
+
+.solution-img {
+  height: 144px;
+  width: 144px !important;
+  margin: 20px 40px 33px 20px;
+  float: left;
+}
+
+.solution-title {
+  margin: 0 auto;
+  color: $color-blue;
+  @include font-size(30);
+  @include font-weight(medium);
+}
+
+.solution-actions button {
+  margin-left: 0px;
+}
+
+.margin-title-10 {
+  margin-top: 20px;
+}
+
+.solution-subtitle {
+  margin: 0 auto;
+  color: $color-blue;
+  @include font-size(24);
+  @include font-weight(normal);
+//   @include line-height(31);
+}

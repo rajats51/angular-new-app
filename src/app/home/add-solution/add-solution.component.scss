@@ -1,0 +1,114 @@
+@import "global_styles";
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 14px 14px 125px;
+}
+
+.solution-img {
+  display: block;
+  height: 220px;
+  width: 220px;
+  margin: auto;
+  margin-top: 24px !important;
+}
+
+.example-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-bottom: 36px;
+  border: 1px solid #e8e8e8 !important;
+  background-color: #ffffff;
+}
+
+.mat-card {
+  border-radius: 0px !important;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: unset !important;
+}
+.solution-content {
+  text-align: center !important;
+}
+
+.solution-title {
+  @include font-pncbrand();
+  @include line-height(34);
+}
+
+.solution-subtitle {
+  margin: 0 auto;
+  color: $color-blue;
+  @include font-pncbrand();
+  @include font-weight(normal);
+  @include font-size(20);
+  @include line-height(26);
+}
+
+.solution-status {
+  color: $color-black;
+  @include line-height(30);
+  @include font-pncbrand();
+  @include font-weight(normal);
+  @include font-size(18);
+}
+
+.solution-actions {
+  & button {
+    @include font-pncbrand();
+    margin: auto;
+    display: block;
+    @include line-height(20);
+    @include font-weight(medium);
+    @include font-size(16);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.margin-title-34 {
+  margin-top: 20px;
+}
+
+.margin-title-10 {
+  margin-top: 10px;
+}
+
+@include small {
+  .container {
+    display: flex;
+  }
+  #solutions-hub {
+    width: 280px;
+  }
+  #image {
+    width: 200px;
+  }
+}
+
+@include medium {
+  @import "./styles/medium";
+}
+
+@include large {
+  @import "./styles/large";
+}
+
+@include xtralarge {
+  @import "./styles/xtralarge";
+}
+
+@include ultra {
+  @import "./styles/ultra";
+}

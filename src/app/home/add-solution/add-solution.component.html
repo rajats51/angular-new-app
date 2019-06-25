@@ -1,0 +1,31 @@
+<div class="container">
+  <mat-card class="example-card"
+            *ngFor='let item of tileNames; let i=index'>
+    <img mat-card-image
+         id="{{item.image_id}}"
+         class="solution-img"
+         [src]="item.image"
+         alt="{{item.image_id}}">
+    <mat-card-content class="solution-content "
+                      [ngClass]="(item.subtitle == '' ) ? 'margin-title-34': 'margin-title-10'">
+      <div class="title">
+        <h3 class="solution-title "
+            id="solution-title-text"> {{item.title}}</h3>
+        <h6 class="solution-subtitle"
+            id="solution-subtitle-text"> {{item.subtitle}} </h6>
+      </div>
+      <p class="solution-status"
+         id="solution-status-text">{{item.status}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <div class="solution-actions">
+        <button class="button"
+                mat-button
+                type="button"
+                id="{{item.button_title | lowercase }}"
+                (click)="next_screen(item.destination)">{{item.button_title}}</button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+
+</div>
