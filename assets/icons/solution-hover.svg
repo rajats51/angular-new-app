@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon / solution / solution-hover</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon-/-solution-/-solution-hover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,12.2205882 L5.00156762,8.30969955 L5.03282685,17.0021679 L12,20.8955882 L12,12.2205882 Z M13,12.2205882 L13,20.8955882 L19.9672034,17.002151 L19.9999956,8.30882598 L13,12.2205882 Z M4,7.75 L12.5,3 L20.9940913,7.74669808 L21,7.74336381 L21,17.5778656 L20.9974316,17.5764353 L12.5,22.325 L4.00222753,17.5762448 L4,17.5774841 L4,7.75 Z M18.9500693,7.75 L12.5,4.14554953 L6.04993075,7.75 L12.5,11.3544505 L18.9500693,7.75 Z" id="solution-icon" fill="#EC6C00" fill-rule="nonzero"></path>
+    </g>
+</svg>

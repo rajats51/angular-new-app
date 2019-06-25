@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="46px" viewBox="0 0 20 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/tasks/new</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="xlarge-/-taskcard-/-master" transform="translate(-233.000000, 0.000000)">
+            <g id="icon-/-task-/-new" transform="translate(233.000000, 0.000000)">
+                <polygon id="Shape-Copy-25" fill="#EC6C00" fill-rule="nonzero" points="4.54747351e-13 0 6.37395421e-13 46 10 37.8894128 20 46 20 0"></polygon>
+                <path d="M4.432,23.544 L3.244,23.544 L-0.704,17.532 L-0.704,23.544 L-2,23.544 L-2,15 L-0.812,15 L3.136,21.012 L3.136,15 L4.432,15 L4.432,23.544 Z M11.884,16.164 L7.72,16.164 L7.72,18.66 L11.272,18.66 L11.272,19.824 L7.72,19.824 L7.72,22.38 L11.884,22.38 L11.884,23.544 L6.424,23.544 L6.424,15 L11.884,15 L11.884,16.164 Z M20.392,23.544 L19.264,23.544 L17.524,17.556 L15.796,23.544 L14.668,23.544 L12.436,15 L13.804,15 L15.292,21.108 L17.008,15 L18.052,15 L19.768,21.108 L21.256,15 L22.624,15 L20.392,23.544 Z" id="NEW" fill="#FFFFFF" fill-rule="evenodd" transform="translate(10.312000, 19.272000) rotate(90.000000) translate(-10.312000, -19.272000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

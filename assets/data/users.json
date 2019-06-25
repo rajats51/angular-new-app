@@ -1,0 +1,23 @@
+[
+    {
+        "userName":"cpo",
+        "password":"cpo"
+    },
+    {
+        "userName":"admin",
+        "password":"admin"
+    },
+    {
+        "userName":"solution",
+        "password":"solution"
+    },
+    {
+        "userName":"prospect",
+        "password":"prospect"
+    },
+    {
+        "userName":"test",
+        "password":"test"
+    }
+    
+]

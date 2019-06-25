@@ -1,0 +1,35 @@
+[
+    {
+        "image":"../png/addSolution.png" ,
+        "title":"Solution",
+        "status": "Add new",
+        "button-title": " DISCOVER",
+        "destination":""
+
+    },
+    {
+        "image":"../png/rewardsCard.png" ,
+        "title":" Rewards Card",
+        "status": "In-Progress",
+        "button-title": "VIEW",
+        "destination":""
+
+    },
+    {
+        "image":"../png/pinacleSolutionTile" ,
+        "title":"PINACLE For your growing business",
+        "status": "Not Yet Started",
+        "button-title": "VIEW",
+        "destination":""
+
+    },
+    {
+        "image":"../png/commericalLoan.png" ,
+        "title":"Commerical Loan",
+        "status": " Add new",
+        "button-title": " DISCOVER",
+        "destination":""
+
+    }
+
+]

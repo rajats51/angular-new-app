@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/help-off</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/help-off" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15,28.5 C22.44375,28.5 28.5,22.44375 28.5,15 C28.5,7.55625 22.44375,1.5 15,1.5 C7.55625,1.5 1.5,7.55625 1.5,15 C1.5,22.44375 7.55625,28.5 15,28.5 Z M15,0 C23.2845,0 30,6.7155 30,15 C30,23.2845 23.2845,30 15,30 C6.7155,30 0,23.2845 0,15 C0,6.7155 6.7155,0 15,0 Z M7,9 L24,9 L24,19.49925 L21.6818182,19.49925 L21.6818182,24 L15.5,19.49925 L7,19.49925 L7,9 Z M8.54545455,10.5 L8.54545455,18 L15.5,18 L16.0154091,18 L16.4272727,18.29925 L20.1363636,21 L20.1363636,19.49925 L20.1363636,18 L21.6818182,18 L22.4545455,18 L22.4545455,10.5 L8.54545455,10.5 Z" id="Combined-Shape" fill="#0068AC"></path>
+    </g>
+</svg>
