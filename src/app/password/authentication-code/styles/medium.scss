@@ -1,0 +1,192 @@
+@import "global_styles";
+
+.header-container{
+    width: 100%;
+    height: 7%;	
+    background-color: #FFFFFF;	
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.05);
+    padding-top:20px;
+}
+
+.logo{
+    margin-left: auto;
+    margin-right:auto;
+    display: block;
+}
+
+.briefcase-container{
+    width:100%;
+    height: 26.4%;
+    margin-top: 6.4%;
+    text-align: center;
+    margin-bottom:6.4%;
+    .image{   
+        border-style: none;
+        width: 36.8%;
+        height: auto;
+        max-width: 290px;
+        min-width: 200px;
+       
+    }
+}
+
+.auth_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-grow:1; 
+    height: 55.6%; 
+}
+
+.authform_container {
+    @include font-size(15);
+    text-align: center;
+    color: $color-blue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.authform_container_welcome { 
+    height: 4%;
+    width: 67.5%;
+    color: $color-blue;
+    @include font-size(32);
+    @include font-weight(medium);
+    @include line-height(36);
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    min-width: 413px;
+    max-width: calc(100%-175px);
+}
+
+.auth_progressbar{
+   width:100%;
+   height: 8.8%;
+   padding-left: 7%;
+   padding-right: 7%;
+   margin-left:auto;
+   margin-right:auto;
+   margin-top: 3%;
+   max-width: calc(100%-136px);
+}
+
+.authform_container_instruction {  
+    height: 4%;
+    width: 71.09%;
+    opacity: 0.7;
+    color: #000000;
+    @include font-size(16);
+    @include font-weight(medium);
+    @include line-height(40);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 13%;
+}
+
+.pin-form {
+    width: 72%;
+    height: 21.65%;
+    background-color: #FFFFFF;
+    box-shadow: 0 50px 50px 0 rgba(0,0,0,0.05);
+    opacity: 0.77;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 20.7%;
+    max-width: 430px;
+}
+
+.pin-input{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 3%;
+    margin-left: auto;    
+    margin-right: auto;
+}
+
+.pin{
+    margin: 0 5px;
+    text-align: center;
+    height: 65px;
+    width: 40px;
+    @include font-size(25);
+    @include line-height(28); 
+    border: solid 1px $color-blue;
+    outline: none;
+    border-radius: 0px;
+
+}
+
+.submit_button_container{
+    margin-top: 30px;
+    margin-left: 4%;
+    width: 100%;
+}
+
+.button {
+    height: 38px;	
+    width: 170px;	
+    background-color: $color-dark-blue;	
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.3);
+    color: #FFFFFF;	
+    @include font-size(16);	
+    @include font-weight(medium);	
+    letter-spacing: 1px;	
+    @include line-height(20);	
+    text-align: center;
+    margin-left: 35px;
+    margin-bottom: 30px;    
+    border: none;
+}
+
+.auth_footer_container{
+    display:flex;
+    height:70px !important;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bg_footer{
+    background-color: $color-blue;
+    width: 100%;
+    height:180px;
+    display: block;  
+    position: fixed;
+    bottom:0;
+    left:0;
+    .copyright{
+      color: #FFFFFF;
+      @include font-size(14px);
+      @include font-weight(500);
+      @include line-height(16px);
+      padding-top: 21.6px;
+      text-align: center;
+    }
+  
+    .reflinks{
+      text-align: center;
+    }
+  
+    .link{
+        color: #FFFFFF;
+        @include font-size(14px);
+        @include font-weight(bold);
+        @include line-height(16px);
+        text-align: center;
+      }
+  
+    .span-divider{
+      @include line-height(16px);
+      color: #FFFFFF;
+      padding: 0 24px;
+    }
+  }

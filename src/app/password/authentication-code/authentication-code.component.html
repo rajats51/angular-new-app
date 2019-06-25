@@ -1,0 +1,91 @@
+<div class="header-container">
+       <img class="logo"
+            id="authentication-header"
+            alt="Logo"
+            id="header-logo"
+            src="assets/icons/outline.svg">
+</div>
+<div class="content-container">
+
+<div class="briefcase-container">
+        <img class="image"
+             type="briefcase"
+             alt="image"
+             id="briefcase-img"
+             src="assets/svg/case.svg">
+</div>  
+
+  <div class="auth_container"> 
+       <div id="authform_container">
+              <div id="authform_container_welcome" class="authform_container_welcome">
+              Welcome - Email Verification
+            </div>
+              <div class="auth_progressbar">
+                   <app-progressbar [stepNames]="steps" [currentStepIndex]="1"></app-progressbar>
+              </div>
+              <div id="authform_container_instruction" class="authform_container_instruction">Please enter the verification code sent to your email.</div>
+              <div id="form" 
+                   class="pin-form">
+                  <div id="pin-input"
+                      class="pin-input">
+                            <input id="pin-1"
+                                   class="pin"
+                                   type="text"
+                                   maxLength="1"
+                                   size="1"
+                                   min="0"
+                                   max="9"
+                                   pattern="[0-9]{1}" />
+                            <input id="pin-2"
+                                   class="pin"
+                                   type="text"
+                                   maxLength="1"
+                                   size="1"
+                                   min="0"
+                                   max="9"
+                                   pattern="[0-9]{1}" />
+                            <input id="pin-3"
+                                   class="pin"
+                                   type="text"
+                                   maxLength="1"
+                                   size="1"
+                                   min="0"
+                                   max="9"
+                                   pattern="[0-9]{1}" />
+                            <input id="pin-4"
+                                   class="pin"
+                                   type="text"
+                                   maxLength="1"
+                                   size="1"
+                                   min="0"
+                                   max="9"
+                                   pattern="[0-9]{1}" />
+                            <input id="pin-5"
+                                   class="pin"
+                                   type="text"
+                                   maxLength="1"
+                                   size="1"
+                                   min="0"
+                                   max="9"
+                                   pattern="[0-9]{1}" />
+                            <input id="pin-6"
+                                   class="pin"
+                                   type="text"
+                                   maxLength="1"
+                                   size="1"
+                                   min="0"
+                                   max="9"
+                                   pattern="[0-9]{1}" />
+                     </div>
+                     <div class="submit_button_container">
+                        <button class="button"
+                              type="submit">SUBMIT</button>
+                      </div>
+              </div>
+    </div>
+  </div>       
+</div>
+<div class="auth_footer_container">
+    <app-pre-footer></app-pre-footer>
+  </div>
+

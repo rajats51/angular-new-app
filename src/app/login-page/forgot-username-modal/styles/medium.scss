@@ -1,0 +1,46 @@
+
+.forgot-username-content{
+    height: 304px !important;
+    width: 480px !important;
+}
+
+.query{
+    width:406.41px;
+    @include font-size(34);
+    margin-top: 38px;
+	margin-left: 37px;
+	margin-right: 35.86px;
+}
+
+.response{
+    width: 309.98px;
+    margin-top: 33px;
+	margin-left: 37px;
+    margin-right: 132.29px;
+    margin-bottom: 25px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 480px;
+    box-sizing: border-box;
+    border: 1px solid #CBCFD2;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+.bg-button{
+    //width: 162px;
+    margin-top: 15px;
+    margin-bottom: 55px;
+    margin-right: 38.06px;
+
+    //for "continue to login" text
+    // height: 20px;	
+    // width: 163px;	
+}
+
+.cdk-overlay-backdrop.cdk-overlay-dark-backdrop {
+    margin-bottom: 180px;
+  }

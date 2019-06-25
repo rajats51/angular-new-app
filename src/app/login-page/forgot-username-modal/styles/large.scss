@@ -1,0 +1,38 @@
+
+.forgot-username-content{
+    height: 304px !important;
+    width: 654px !important;
+  }
+
+.query {
+    width: 500px;
+    @include font-size(35);
+    margin-left: 30px;
+    margin-right: 79px;
+    margin-top: 39px;
+    margin-bottom: 33px;
+}
+
+.response{
+    width: 423px;
+    margin-left: 76px;
+    margin-right: 156px;
+    margin-bottom: 25px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 655px;
+    box-sizing: border-box;
+    border: 1px solid #CBCFD2;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.bg-button{
+    margin-right: 79px;
+    margin-top: 12px;
+    margin-bottom: 55px;
+}

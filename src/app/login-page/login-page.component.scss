@@ -1,0 +1,122 @@
+@import "global_styles";
+
+.root-content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.verify-container {
+  display: flex;
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.briefcase-container {
+  display: flex;
+  flex: 0.4 auto;
+  justify-content: center;
+}
+
+.form_holder {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.information_action{
+  @include line-height(20);
+  @include font-weight(medium);
+  @include font-size(12);
+    height: 20px;
+    color: $color-blue;
+    padding-bottom: 30px;
+    text-decoration: none;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+.mar-bot-20 {
+  margin-bottom: 20px;
+}
+.mar-bot-30 {
+  margin-bottom: 30px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  & .mat-form-field-can-float{
+    @include line-height(18);
+    @include font-weight(medium);
+    @include font-size(18);
+  }
+  
+  & input {
+    @include line-height(10);
+    @include font-weight(normal);
+    @include font-size(18);
+    color: rgba(0,0,0,0.9);
+    letter-spacing: 1.08px;
+  }
+}
+
+.button {
+  background-color: $color-blue;
+  box-shadow: none;
+  color: white;
+  @include font-size(16);
+  @include font-weight(medium);
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  margin-bottom: 25px;
+}
+
+.forgot-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form {
+  & button {
+    width: 150px;
+    padding: 10px;
+  }
+}
+
+.icon {
+  position: relative;
+  bottom: 3px;
+  right: 10px;
+  margin-left: 20px;
+}
+
+.line{
+  box-sizing: border-box;
+  height: 2px;
+  border: 1px solid #000000;
+}
+
+.briefcase-container .instructions {
+  display: none;
+}
+
+@include ultra{
+ @import "./styles/ultra";
+}
+@include xtralarge{
+  @import "./styles/xtralarge";
+ }
+ @include large{
+  @import "./styles/large";
+ }
+ @include medium{
+  @import "./styles/medium";
+ }
+ @include small{
+  @import "./styles/small";
+ }

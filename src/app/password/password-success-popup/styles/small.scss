@@ -1,0 +1,64 @@
+.popup-wrapper {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 20px;
+}
+
+.close-popup {
+  display: block;
+  position: absolute;
+  right: 8px;
+  top: 11px;
+  color: $color-blue;
+  @include font-weight(normal);
+
+  mat-icon {
+    height: 14.14px;
+    width: 14.14px;
+  }
+}
+
+.progressbar-container {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.success-your-new-pa {
+  height: 76px;
+  color: $color-blue;
+  font-family: "PNC Brand";
+  @include font-size(28);
+  @include font-weight(medium);
+  @include line-height(38);
+  margin-top: 38px;
+  text-align: left;
+}
+
+.please-continue-to-y {
+  height: 46px;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "PNC Brand";
+  @include font-size(18);
+  @include font-weight(normal);
+  @include line-height(23);
+  margin-top: 28px;
+  text-align: left;
+}
+
+.bg-button {
+  height: 42px;
+  width: 100%;
+  background-color: $color-blue;
+  color: white;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 65px;
+  @include font-size(16);
+  @include font-weight(medium);
+  @include line-height(26px);
+  text-align: center;
+  border-radius: 0;
+}

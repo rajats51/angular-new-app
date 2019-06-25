@@ -1,0 +1,41 @@
+<div class="root-content-container">
+    <app-pre-header></app-pre-header>
+  <div class="verify-container">
+    <div class="briefcase-container">
+        <div class="instructions" id="instructions-mobile">
+          <span class="responsive-line">Welcome </span>
+          <span class="responsive-line">to your </span>
+          <span class="responsive-line">Solution Hub</span>
+        </div>    
+      <img class="image" type="briefcase" alt="image" id="briefcase-img" #briefcaseimg src="assets/svg/case.svg">
+    </div>
+
+    <div class="form_holder" (submit)="logIn()">
+      <div class="instructions" id="instructions">
+        Welcome to your Solution Hub
+      </div>
+      <div id="form-container" class="form-container">
+        <form [formGroup]="loginForm">
+          <mat-form-field class="form-label mar-bot-30">
+            <mat-icon matSuffix class="icon user-icon" svgIcon="username_match"></mat-icon>
+            <input matInput type="email" placeholder="User name" class="username" id="username" type="email" formControlName="testName">
+          </mat-form-field>
+          <mat-form-field class="mar-bot-30">
+            <mat-icon matSuffix class="icon password-icon" svgIcon="password_match"></mat-icon>
+            <input matInput placeholder="Password" class="password" id="password" type="password" formControlName="testPW">
+          </mat-form-field>
+          <button mat-button type="submit" [disabled]="!loginForm.valid" id="submit-btn" class="button">SUBMIT</button>
+          <div class="forgot-links">
+            <a class="information_action" href="javascript:void(0);" (click)="forgotUsernameModal()" id="forgot-username">
+              Forgot user name?
+            </a>
+            <a class="information_action" href="javascript:void(0);" [routerLink]="['/verify/user','reset']" id="forgot-password">
+              Forgot password?
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <app-pre-footer></app-pre-footer>
+</div>

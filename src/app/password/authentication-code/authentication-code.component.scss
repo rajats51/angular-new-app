@@ -1,0 +1,21 @@
+@import "global_styles";
+
+@include xtralarge{
+    @import "./styles/xtralarge_auth";
+}
+
+@include large{
+    @import "./styles/large_auth";
+}
+
+@include medium{
+    @import "./styles/medium";
+}
+
+@include ultra{
+    @import "./styles/ultra_auth";
+}
+
+// @include small{
+//     @import "./styles/small";
+// }

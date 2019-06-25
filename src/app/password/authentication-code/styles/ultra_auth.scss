@@ -1,0 +1,158 @@
+@import "global_styles";
+
+.content-container{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:86.4%;
+}
+
+.header-container{
+    width: 100%;
+    height: pixelsToPercent(70,874);	
+    background-color: #FFFFFF;	
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.05);
+    padding-top: 26px;
+}
+
+.logo{
+    margin-left: 175px;
+    margin-right:auto;
+    display: block;
+    height: 349px;
+    height: 30px;
+    min-width: 349px;
+}
+
+.briefcase-container{
+    width:100%;
+    height: pixelsToPercent(368,874);
+    margin-top: 6.4%;
+    text-align: center;
+    margin-bottom:6.4%;
+    margin-left: -56px;
+
+    .image{   
+        border-style: none;
+        width: pixelsToPercent(368,1600);
+        height: auto;
+        max-width: 388px;
+        min-width: 368px;
+       
+    }
+}
+
+.auth_container {
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    flex-grow:1; 
+    margin-top: 6.4%;
+}
+
+.authform_container {
+    @include font-size(15);
+    text-align: center;
+    color: $color-blue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.authform_container_welcome { 
+    width: 100%;
+    color: $color-blue;
+    @include font-size(45);
+    @include font-weight(medium);
+    @include line-height(51);
+    margin-left:auto;
+    margin-right:auto;
+    min-width: 413px;
+}
+
+.auth_progressbar{
+   width: 100%;
+   height: 49px;
+   margin-left:auto;
+   margin-right:auto;
+   margin-top: 3%;
+   margin-left: -117px;
+}
+
+.authform_container_instruction {  
+    width:100%;
+    opacity: 0.7;
+    color: #000000;
+    @include font-size(20);
+    @include font-weight(medium);
+    @include line-height(40);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+}
+
+.pin-form {
+    width: 72%;
+    height: 21.65%;
+    background-color: #FFFFFF;
+    box-shadow: 0 50px 50px 0 rgba(0,0,0,0.05);
+    opacity: 0.77;
+    margin-right: auto;
+    margin-top: 8%;
+    margin-bottom: 20.7%;
+}
+
+.pin-input{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 3%;
+    margin-left: auto;    
+    margin-right: auto;          
+}
+
+.pin{
+    margin: 0 5px;
+    text-align: center;
+    height: 65px;
+    width: 40px;
+    @include font-size(25);
+    @include line-height(28); 
+    border: solid 1px $color-blue;
+    outline: none;
+    border-radius: 0px;
+
+}
+
+.submit_button_container{
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.button {
+    height: 38px;	
+    width: 170px;	
+    background-color: $color-dark-blue;	
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.3);
+    color: #FFFFFF;	
+    @include font-size(16);	
+    @include font-weight(medium);	
+    letter-spacing: 1px;	
+    @include line-height(20);	
+    text-align: center;
+    margin-left: 35px;
+    margin-bottom: 30px;    
+    border: none;
+}
+
+.auth_footer_container{
+    display:flex;
+    height:70px !important;
+    flex-direction: column;
+    justify-content: flex-end;
+}

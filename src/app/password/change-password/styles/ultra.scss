@@ -1,0 +1,71 @@
+@import "global_styles";
+
+.canvas-container{
+    height: 100%;
+    width:100%;
+}
+.row1-container{
+    width:100%;
+}
+.row2-container{
+    width:100%;
+}
+
+.instructions-container{
+    margin: 20px 0px 0px 30px;
+    width:50%;
+}
+
+.welcome-container{
+    margin: 18px 0px 0px 30px;
+    width:50%;
+}
+
+.welcome{
+    height: 62px;	
+    // width: 398px;	
+    color: $color-blue;	
+    @include font-size(40);
+    @include font-weight(medium);
+    @include line-height(51);
+}
+
+.step{
+    height: 40px;	
+    width: 411px;	
+    opacity: 0.9;	
+    color: $color-black;
+    @include font-size(20);
+    @include font-weight(medium);
+    @include line-height(40);
+}
+
+.note{
+    height: 40px;	
+    width: 171px;	
+    opacity: 0.9;	
+    color: $color-black;	
+    @include font-size(22);
+    @include font-weight(medium);
+    @include line-height(40);
+}
+
+.password-requirement{
+    height: 109px;	
+    width: 580px;	
+    color: $color-black;	
+    @include font-size(16);
+    @include line-height(25);
+}
+
+.form-container{
+    width: 574px;
+}
+
+form{
+    & input{
+        width: 300px;			
+        letter-spacing: 0.88px;	
+    }
+
+}

@@ -1,0 +1,90 @@
+@import "global_styles";
+
+.canvas-container{
+    height: 100%;
+    width:100%;
+}
+
+.row1-container{
+    width:100%;
+    font-weight: 500px;
+}
+.password-logo{
+    margin: 20px 100px;
+}
+
+.instructions-container{
+    margin-left: 100px;	
+    color: #000000;
+    width:50%;	 
+}
+
+.welcome-container{
+    width:50%;
+    margin-left:100px;
+    margin-top:69px;
+}
+
+.row2-container{
+    width:100%;
+    margin-bottom:136px;
+}
+
+.step{
+    height: 40px;	
+    width: 311px;	
+    color: #000000;		
+    font-size: 20px;	
+    font-weight: 500;	
+    line-height: 40px;
+}
+.progress-container{
+    height: 66px;	
+    width:50%;
+    margin-top: 78px;
+    margin-left: -114px;
+}
+.note{
+    height: 40px;	
+    width: 122px;	
+    color: #000000;			
+    @include font-size(22);
+    @include font-weight(bold);		
+    @include line-height(40);
+    margin-bottom:10px;
+}
+.password-requirement{
+    height: 89px;	
+    max-width: 580px;	
+}
+
+.welcome{
+    height: 62px;	
+    width: 522px;	
+    color: $color-blue;		
+    @include font-size(40);	
+    @include font-weight(500);	
+    @include line-height(51);
+}  
+
+.form-container{
+    width:50%;	
+    margin: -105px 30px 0px 0px;
+    padding: 46px 0px 55px 30px;  
+}
+
+.form_holder{
+    padding-right: 30px;  
+}
+
+.icon-align{
+    margin-bottom: 35px;
+}
+
+.button{
+    font-size: 16px;	
+    font-weight: 500;	
+    letter-spacing: 1px;	
+    // text-align: center;
+   
+}

@@ -1,0 +1,87 @@
+.information_action{
+    margin-top: 16px;
+}
+   
+.form_holder {
+    padding-top: 52px;
+    width: 100%;
+    margin: 0 auto;
+}
+ 
+form {
+  margin: 0 25px;
+  & .mat-form-field-can-float{
+    padding-top:0;
+  }
+  
+  & button {
+    height:38px;
+    width: 100%;
+    margin-top: 20px;
+  } 
+}
+
+.verify-container {
+  flex-direction: column;
+}
+
+.form_holder .instructions {
+  display: none; 
+}
+
+.briefcase-container {
+  flex: 0 auto;
+  padding: 0 25px;
+  width: 100%;
+  margin: 25px auto 0 auto;
+
+  .instructions {
+    display: block;
+    color: $color-blue;
+    @include font-size(26);
+    @include font-weight(medium);
+    margin-right: 20px;
+    margin-left: -2px;
+  }
+
+  img {
+    max-width: 104px;
+    max-height: 104px;
+  }
+}
+
+mat-icon {
+  display: none;
+}
+
+.responsive-line{
+  display: inline;
+}
+
+@media only screen and (min-width: 420px){
+  .form_holder{
+    width: 420px;
+  }
+  .briefcase-container{
+    width: 420px;
+    .instructions {
+      margin-right: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 639px){
+  .instructions{
+    @include line-height(50);
+  }
+}
+
+@media only screen and (max-width: 360px){
+  .instructions{
+    @include line-height(31);
+    display: block;
+    .responsive-line{
+      display: block;
+    }
+  }
+}

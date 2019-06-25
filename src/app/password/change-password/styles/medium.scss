@@ -1,0 +1,62 @@
+@import "global_styles";
+
+.row1-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row2-container{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 157px;
+    justify-content: center;
+    align-items: center;
+}
+.welcome{
+    height: 41px;	
+    width: 478px;	
+    color: $color-blue;	
+    @include font-size(30);	
+    @include font-weight(medium);	
+    @include line-height(38);
+    margin: 30px auto;	
+}
+
+.step{
+    display: none;	
+}
+
+.form-container{
+    width: 460px;	
+    top: 0;
+}
+
+form{
+    & input{
+        width: 300px;			
+        letter-spacing: 0.88px;	
+    }
+}
+
+.instructions-container{
+    margin:20px auto;
+}
+
+.note{
+    height: 40px;	
+    width: 164px;	
+    opacity: 0.9;	
+    color: $color-black;
+    @include font-size(22);	
+    @include font-weight(medium);	
+    @include line-height(40);	
+    margin: 28px auto 8px;
+}
+.password-requirement{
+    height: 155px;
+    width: 441px;	
+    color: $color-black;
+    @include font-size(16);	
+    @include line-height(25);		
+}

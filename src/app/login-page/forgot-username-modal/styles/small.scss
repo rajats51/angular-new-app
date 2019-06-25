@@ -1,0 +1,49 @@
+.forgot-username-content{
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 20px;
+}
+
+.close-popup{
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 11px;
+    color: $color-blue;
+    @include font-weight(normal);
+
+  mat-icon {
+    height: 14.14px;
+    width: 14.14px;
+  }
+}
+
+.query{
+    width:100%;
+    height: 76px;
+    margin-top: 52px;
+    @include line-height(38);
+    @include font-size(28);
+    text-align: left;
+}
+
+.response{
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 44px;
+    @include font-size(18);
+    @include line-height(23);
+    @include font-weight(normal);
+}
+
+hr {
+    display: none;
+}
+
+.bg-button{
+    height: 42px;
+    width: 100%;
+    margin-bottom: 204px;
+    @include font-size(16);
+    @include line-height(26);
+}

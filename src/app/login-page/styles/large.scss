@@ -1,0 +1,38 @@
+.verify-container {
+  flex-direction: row;
+  padding-bottom: 157px;
+}
+
+.briefcase-container{
+  .image{
+        height: 300px;
+        width: 300px;
+        margin-left: 70px;
+        margin-top: 161px;
+      }
+}
+
+.form_holder
+{
+  margin-left: 114px;
+  text-align: left;
+}
+
+.instructions {
+  width: 516px;
+  height: 53px;
+  color: $color-blue;
+  @include font-size(39);
+  @include font-weight(medium);
+  @include line-height(50);
+  margin: 78px 0px 30px 0px;
+  padding-bottom: 30px;
+}
+
+.form-container{
+  height: 355px;
+  width: 476px; 
+  box-shadow: 0 10px 40px 0 rgba(0,0,0,0.1);
+  padding: 25px 36px 30px 45px;
+  background-color: rgba(245,245,245,0.1);
+}
