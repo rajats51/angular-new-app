@@ -1,0 +1,17 @@
+.avatar-banner{	
+    display: flex;
+    flex-flow:row ;
+    flex-direction: row-reverse;
+    align-content: flex-start;
+    justify-content: space-between;
+    text-align: left;
+}
+.pnc-support{
+    text-align: left;
+    padding-top: 10px;
+}
+.image{
+    margin:0px;
+    border-radius:0%;
+    margin-right:20px;
+}

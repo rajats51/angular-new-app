@@ -1,0 +1,34 @@
+<div class="bg-banner">
+        <div class="navigation">
+            <span class="tab-menu-label">Solution:</span>
+            <mat-form-field id="secondary-menu-dropdown">
+                <span class="solution-hub" id="Solution-Hub">{{solutionMenuOption}} </span> 
+                <mat-icon class="dropdown-filled" svgIcon="dropdown"></mat-icon>
+                    <mat-select class="solutions-menu " [(value)]="solutionMenuOption" (selectionChange) = "solutionMenuOptionChanged($event)">
+                        <mat-option value="0">Solution Hub</mat-option>
+                        <mat-option value="1"> Crew</mat-option>
+                        <mat-option value="2"> Activity</mat-option>
+                    </mat-select>
+            </mat-form-field>
+            <mat-tab-group class="tab-menu-container" disableRipple="true" (selectedTabChange)="swapViews($event)">
+                <mat-tab label="Solution Hub" id="solutions-tab"></mat-tab>
+                <mat-tab label="Crew"         id="crew-tab"></mat-tab>
+                <mat-tab label="Activity"     id="activity-tab"></mat-tab>
+            </mat-tab-group>
+         </div>
+        <div class="banner-body">
+            <div class="info-banner">
+              <div class="welcometext">
+                  <span id="welcome-name">Hello John</span> 
+                  <br/>
+                  <span class="welcometext1" id="welcome-text">Welcome to PNC Solution Setup </span>
+              </div>
+              <div class="tasktext" id="task-text">
+                <span> You have one solution selected </span>
+              </div>
+            </div>
+            <div class="avatar-component">
+                <app-avatar-banner></app-avatar-banner> 
+            </div>    
+        </div>  
+      </div>

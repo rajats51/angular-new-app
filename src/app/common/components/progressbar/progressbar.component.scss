@@ -1,0 +1,102 @@
+.progressbar {
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.buttons {
+  position: absolute;
+  top: 90px;
+  text-align: center;
+  width: 100%;
+}
+
+.btn {
+  width: 50px;
+  height: 30px;
+}
+
+.step-wizard {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  .progress {
+    position: relative;
+    top: 21px;
+    margin: 0 50px;
+  }
+  .progressbar {
+    position: absolute;
+    background-color: #6bb536;
+    height: 4px;
+    -webkit-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+    &.empty {
+      opacity: 1;
+      background-color: #9b9b9b;
+      width: 100%;
+    }
+  }
+  ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    z-index: 1;
+    text-align: center;
+    min-width: 100px;
+    width: 100px;
+    max-width: 100px;
+    flex: 1;
+    & .step {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url("../../../../assets/icons/inactive@2x.svg") no-repeat center;
+      -webkit-transition: background-color 0.6s ease, border-color 0.6s ease;
+      -o-transition: background-color 0.6s ease, border-color 0.6s ease;
+      transition: background-color 0.6s ease, border-color 0.6s ease;
+      background-size: cover;
+    }
+    & .title {
+      word-spacing: 100px;
+      word-wrap: break-word;
+      padding-top: 10px; //color: #0068AC;
+      color: #222222;
+      -webkit-transition: color 0.6s ease;
+      -o-transition: color 0.6s ease;
+      transition: color 0.6s ease;
+    }
+    &.done .title {
+      font-weight: bold;
+    }
+    &.error .title {
+      font-weight: bold;
+      color: red;
+    }
+    &.active .step {
+      background: url("../../../../assets/icons/inprogress-copy@2x.svg") no-repeat center;
+    }
+    &.done .step {
+      background: url("../../../../assets/icons/complete@2x.svg") no-repeat center;
+    }
+    &.error .step {
+      background: url("../../../../assets/icons/error@2x.svg") no-repeat center;
+    }
+  }
+  @media only screen and (max-width: 639px) {
+    .progress {
+      margin: 0 35px;
+    }
+    li {
+      min-width: 70px;
+      width: 70px;
+      max-width: 70px;
+    }
+  }
+}
