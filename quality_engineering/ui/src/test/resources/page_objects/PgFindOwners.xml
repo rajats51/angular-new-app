@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page name="PgFindOwners">
+<page-objects>
+<page-object>
+<alias>Last Name</alias>
+<xpath>//*[@id="lastName"]</xpath>
+</page-object>
+<page-object>
+<alias>Submit</alias>
+<xpath>//*[@id="search-owner-form"]/div[2]/div/button</xpath>
+</page-object>
+</page-objects>
+</page>
+

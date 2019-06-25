@@ -1,0 +1,41 @@
+# This file is where environment values are configured. It is a simple key/value
+# configuration where the key (i.e. google) will be used to reference the URL
+# that is specified.
+#
+#
+# Required values:
+# It is required that you specify at least one environment is required.
+#
+# environments:
+#   <your_prod_environment_name>: <the_url_for_testing_application>
+#   <your_rnd_environment_name>: <the_url_for_testing_application>
+#
+#
+# Optional values:
+#
+# The databases field is optional if you require a database connection for your
+# testing. If your database connection does not require authentication, the user
+# and password fields can be omitted.
+#
+#  databases:
+#    QAOracle:
+#      connection: jdbc:oracle:thin:@HOSTSERVER.PROD.PNCINT.NET:1521/DBSERVICENAME.PROD.PNCINT.NET
+#      user: <your_db_username>
+#      password: <your_db_password>
+#
+# The configuration below are simply examples. Please change these values to
+# be meaningful to your application.
+---
+environments:
+  QAOracle: http://localhost:8080/
+  dockerLocal: http://petclinic:8080/
+  google: https://www.google.com/
+  CPO : http://lcpo005w.rnd.pncint.net:3000/
+  Login : "http://lcpo005w.rnd.pncint.net:3000/login"
+databases:
+  QAOracle:
+    connection: jdbc:oracle:thin:@HOSTSERVER.PROD.PNCINT.NET:1521/DBSERVICENAME.PROD.PNCINT.NET
+    user: USERID
+    password: PASSWORD
+  QASQL:
+    connection: jdbc:sqlserver://HOSTNAME\CDWINDOWS;instanceName=CDWINDOWS;

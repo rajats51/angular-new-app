@@ -1,0 +1,6 @@
+{"swagger":"2.0","info":{"version":"1.0","title":"https://pwows-qa2.pncint.net"},"basePath":"",
+"paths":{"/EntitlementsWeb/operators/saveoperatorinfo":
+{"post":{"operationId":"SaveOperatorInfo","consumes":["application/json"],
+"parameters":[{"name":"companyId","in":"header","required":false,"type":"string"},
+{"name":"operatorId","in":"header","required":false,"type":"string"},
+{"in":"body","name":"body","description":"Request body","required":true}],"responses":{"404":{},"200":{}}}}}}

@@ -1,0 +1,23 @@
+{
+  "companyId": "qa2api",
+  "operatorId": "test9",
+  "firstName": "Operator",
+  "lastName": "LastName",
+   "middleInitial": "",
+  "email": "test@pnc.com",
+  "phone": "1234567890",
+  "phoneExtension": "1234",
+  "fax": "12345678902",
+  "street": "2 PNC PLAZA",
+  "secStreet": "3RD FLOOR",
+  "city": "PGH",
+  "state": "PA",
+  "location": "",
+  "zip": "15222",
+  "country": "US",
+  "displayName":"OR",
+  "tokenSerial":"",      
+	"ceCompany": {
+	 "brandName": "PINACLE"
+	}  
+} 

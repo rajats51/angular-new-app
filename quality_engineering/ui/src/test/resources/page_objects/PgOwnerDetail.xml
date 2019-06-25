@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page name="PgOwnerDetail">
+<page-objects>
+<page-object>
+<alias>Add Visit</alias>
+<xpath>//a[contains(text(),'Add') and contains(text(), 'Visit')]</xpath>
+</page-object>
+<page-object>
+<alias>Add New Pet</alias>
+<xpath>//a[contains(text(),'Add') and contains(text(), 'Pet')]</xpath>
+</page-object>
+<page-object>
+<alias>Date</alias>
+<xpath>//input[@id='date']</xpath>
+</page-object>
+</page-objects>
+</page>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page name="PgCPOLogin">
+	<page-objects>
+
+		<page-object>
+			<alias>Footer</alias>
+			<xpath>//span[contains(text(),'Copyright © 2018, The PNC Financial Services')]/following-sibling::span[contains(text(),'Group, Inc. All Rights Reserved.')]</xpath>
+		</page-object>
+		<page-object>
+			<alias>LoginFooter</alias>
+			<xpath>//*[@id='footer'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Footer1</alias>
+			<xpath>//*[@id='copyright-1'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Footer2</alias>
+			<xpath>//*[@id='copyright-2'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Header</alias>
+			<xpath>//*[@id='header-logo'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Hamburger menu</alias>
+			<xpath>//*[@id='menuToggle'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>PNC logo</alias>
+			<xpath>//*[@class='logo'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Operator</alias>
+			<xpath>//*[@class='operatorname'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Avatar icon</alias>
+			<xpath>//*[@id='account-icon'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Help icon</alias>
+			<xpath>//*[@class='help_menu'] </xpath>
+		</page-object>
+		<!-- Login-code-page-start -->
+		<page-object>
+			<alias>UserName</alias>
+			<xpath>//*[@id='username'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Password</alias>
+			<xpath>//*[@id='password'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>FYP</alias>
+			<xpath>//*[@id='forgot-password'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>SubmitButton</alias>
+			<xpath>//*[@type='submit'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>LoginPageWlcmMsg</alias>
+			<xpath>//*[@id='instructions'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>UserIcon</alias>
+			<xpath>//*[@svgicon='username_match'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>PasswordIcon</alias>
+			<xpath>//*[@svgicon='password_match'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>FYU</alias>
+			<xpath>//*[@id='forgot-username'] </xpath>
+		</page-object>
+		<!--Login Page End -->
+		<!-- LoginPage-FYU-start -->
+		<page-object>
+			<alias>FYU</alias>
+			<xpath>//*[@id='forgot-username'] </xpath>
+		</page-object>
+
+		<!-- LoginPage-FYU-start -->
+		<page-object>
+			<alias>queryMsg</alias>
+			<xpath>//*[@id='query'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>responseMsg</alias>
+			<xpath>//*[@id='response'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>continueBtn</alias>
+			<xpath>//*[@id='cntnu-to-login-btn'] </xpath>
+		</page-object>
+		<!-- LoginPage-FYU-end -->
+		<!-- SolutionPage-start -->
+		<page-object>
+			<alias>WelcomeMsg</alias>
+			<xpath>//*[@id='welcome-text'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>HelloMsg</alias>
+			<xpath>//*[@id='welcome-name'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>SolutionCount</alias>
+			<xpath>//*[@id='task-text'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>KeyContactName</alias>
+			<xpath>//*[@class='pnc-support-name'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>JobTitle</alias>
+			<xpath>//*[@class='pnc-support-title'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>UserImage</alias>
+			<xpath>//*[@class='image'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Solution Hub</alias>
+			<xpath>//*[@id='mat-tab-label-0-0'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Crew</alias>
+			<xpath>//*[@id='mat-tab-label-0-1'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>ActivitySecondary</alias>
+			<xpath>//*[@id='mat-tab-label-0-2'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Home</alias>
+			<xpath>//*[@id='home'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>3bars</alias>
+			<xpath>//*[@id='menu_icon'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>XIcon</alias>
+			<xpath>//img[contains(@src, 'Close_On.svg')] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Payments</alias>
+			<xpath>//*[@id='payments'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Receivables</alias>
+			<xpath>//*[@id='receivables'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Accounts</alias>
+			<xpath>//*[@id='accounts'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>FinancialAtoms</alias>
+			<xpath>//*[@id='financial-atoms'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Settings</alias>
+			<xpath>//*[@id='settings'] </xpath>
+		</page-object>
+		<page-object>
+			<alias>Help</alias>
+			<xpath>//*[@id='need-help'] </xpath>
+		</page-object>
+
+		<page-object>
+			<alias>My Tasks</alias>
+			<xpath>//*[@id='mat-tab-label-0-0'] </xpath>
+		</page-object>
+
+		<page-object>
+			<alias>Timeline</alias>
+			<xpath>//*[@id='mat-tab-label-0-1'] </xpath>
+		</page-object>
+
+		<page-object>
+			<alias>Crew</alias>
+			<xpath>//*[@id='mat-tab-label-0-2'] </xpath>
+		</page-object>
+
+		<page-object>
+			<alias>Solution</alias>
+			<xpath>//*[@id='mat-tab-label-0-3'] </xpath>
+		</page-object>
+
+		<page-object>
+			<alias>Activity</alias>
+			<xpath>//*[@id='mat-tab-label-0-4'] </xpath>
+		</page-object>
+
+		<page-object>
+			<alias>Status message</alias>
+			<xpath>//*[@id='task-text-link'] </xpath>
+		</page-object>
+
+		<page-object>
+			<alias>ProgressBar</alias>
+			<xpath>//*[@class='banner-progressbar'] </xpath>
+		</page-object>
+
+		<page-object>
+			<alias>KeyContactInfo</alias>
+			<xpath>//*[@class='avatar-banner'] </xpath>
+		</page-object>
+
+		<page-object>
+			<alias>ToDo</alias>
+			<xpath>//*[@id='todo-header'] </xpath>
+		</page-object>
+
+		<page-object>
+			<alias>In Progress</alias>
+			<xpath>//*[@id='progress-header'] </xpath>
+		</page-object>
+
+		<page-object>
+			<alias>Completed</alias>
+			<xpath>//*[@id='completed-header'] </xpath>
+		</page-object>
+
+		<page-object>
+			<alias>Blocked</alias>
+			<xpath>//*[@id='blocked-header'] </xpath>
+		</page-object>
+
+		<page-object>
+			<alias>No Task</alias>
+			<xpath>//*[@class='no-task'] </xpath>
+		</page-object>
+
+		<page-object>
+			<alias>Count</alias>
+			<xpath>//*[@id='todo-count'] </xpath>
+		</page-object>
+
+		<page-object>
+			<alias>LoginPageLink1</alias>
+			<xpath>//a[text()=' Web Privacy Policy ']</xpath>
+		</page-object>
+		<page-object>
+			<alias>LoginPageLink2</alias>
+			<xpath>//a[text()=' PNC General Disclosure']</xpath>
+		</page-object>
+		<page-object>
+			<alias>LoginPageLink3</alias>
+			<xpath>//a[text()=' PNC.com ']</xpath>
+		</page-object>
+		<!-- authentication-code-page -->
+		<page-object>
+			<alias>Briefcase</alias>
+			<xpath>//*[@id='briefcase-img']</xpath>
+		</page-object>
+		<page-object>
+			<alias>welcomeMsgAuthPage</alias>
+			<xpath>//*[@id='authform_container_welcome']</xpath>
+		</page-object>
+		<page-object>
+			<alias>InstructionAuthPage</alias>
+			<xpath>//*[@id='authform_container_instruction']</xpath>
+		</page-object>	
+		<page-object>	
+			<alias>DemoLogin</alias>
+			<xpath>//*[@id='demologin-btn']</xpath>
+		</page-object>	
+		<page-object>	
+			<alias>NextButton</alias>
+			<xpath>//*[@id='next-btn']</xpath>
+		</page-object>	
+
+		<!-- password-page-->
+		<page-object>	
+			<alias>Step3</alias>
+			<xpath>//*[@id='step']</xpath>
+		</page-object>
+
+		<page-object>	
+			<alias>ProgressContainer</alias>
+			<xpath>//*[@id='progressbar']</xpath>
+		</page-object>
+
+		<page-object>	
+			<alias>confirmPassword</alias>
+			<xpath>//*[@name='confirmPassword']</xpath>
+		</page-object>	
+		<page-object>	
+			<alias>NewPassword</alias>
+			<xpath>//*[@name='password']</xpath>
+		</page-object>
+
+		<page-object>	
+			<alias>instructionsContainer</alias>
+			<xpath>//*[@id='instructions-container']</xpath>
+		</page-object>			
+		<page-object>	
+			<alias>welcomeMsgPasswordPage</alias>
+			<xpath>//*[@id='welcome']</xpath>
+		</page-object>	
+
+		<!-- user-page -->
+		<page-object>	
+			<alias>welcomeMsgUserPage</alias>
+			<xpath>//*[@id='welcome-container']</xpath>
+		</page-object>	
+		<page-object>	
+			<alias>confirmMsgUserPage</alias>
+			<xpath>//*[@id='confirm-message']</xpath>
+		</page-object>	
+		<page-object>	
+			<alias>EmailInputUserPage</alias>
+			<xpath>//*[@type='email']</xpath>
+		</page-object>	
+		<!-- Change Password Page (Returning User)-start -->
+		<page-object>	
+			<alias>changepageoldpassword</alias>
+			<xpath>//*[@name='Old password']</xpath>
+		</page-object>	
+		<page-object>	
+			<alias>changepageWlcmMsg</alias>
+			<xpath>//*[@id='welcome']</xpath>
+		</page-object>
+		<page-object>	
+			<alias>changepageConfirmPassword</alias>
+			<xpath>//*[@name='Confirm password']</xpath>
+		</page-object>
+		<page-object>	
+			<alias>changepageCnfrmNewPassword</alias>
+			<xpath>//*[@name='confirm New Password']</xpath>
+		</page-object>
+		<!-- Change Password Page (Returning User)-end -->
+		<!-- password-popup modal start -->
+		<page-object>	
+			<alias>successMsg</alias>
+			<xpath>//*[@class='success-your-new-pa']</xpath>
+		</page-object>
+
+		<page-object>	
+			<alias>passwordPopupH3Msg</alias>
+			<xpath>//*[@class='please-continue-to-y']</xpath>
+		</page-object>
+
+		<page-object>	
+			<alias>passwordPopupCntbtn</alias>
+			<xpath>//*[@id='password-success-popup']/mat-dialog-actions/button</xpath>
+			<!-- <xpath>//*[@class="mat-button-wrapper"]</xpath> -->
+		</page-object>
+		<!-- password-popup modal End -->
+
+		<!-- my crew page start -->
+		<page-object>	
+			<alias>CrewCard</alias>
+			<xpath>//*[@id='card-name']</xpath>
+		</page-object>
+		<page-object>	
+			<alias>CrewKey</alias>
+			<xpath>//*[@id='crew-key']</xpath>
+		</page-object>
+		<page-object>	
+			<alias>CrewList</alias>
+			<xpath>//*[@id='list']</xpath>
+		</page-object>
+		<page-object>	
+			<alias>CrewMembers</alias>
+			<xpath>//*[@id='circle']</xpath>
+		</page-object>
+
+	</page-objects>
+</page>

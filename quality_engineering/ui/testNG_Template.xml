@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Listeners TestSuite">
+	<!-- Tell the FULL TEST SUITE - to use Listeners from the 'class-name' - Package path to Listener Class file name. -->	
+	<listeners>
+		<listener class-name="pnc.mtp.frameworktests.TestNGReporterListener"></listener>	
+      	<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+      	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+    </listeners>
+    
+	<!-- Parameter values passed to the TestNG Test class files for reporting directory and test environment for URL -->
+	<parameter name="runRemote" value="false" />
+    <parameter name="environment" value="QAOracle" /> <!--Environment Parameter can be set here for suite level OR within each test -->
+		
+	<test name="IE Local Test">
+	<parameter name="browserName" value="Internet Explorer" />
+		<classes>
+			<class name="tests.PetClinicRunner">
+			</class>			
+		</classes>
+	</test>		
+			
+	<test name="IE_Tests2">
+		<!-- Environment Parameter set within each test	Capability Parameters are set here for Remote Driver Settings. The parameter name MUST match the capability setting.See Perfecto documentation for details on capabilities.  -->
+		 <parameter name="environment" value="QA" /> 
+		 
+		<parameter name="platformName" value="Windows" /> <!--Required -->
+		<parameter name="platformVersion" value="7" /> <!--Required -->
+		<parameter name="browserName" value="Internet Explorer" /> <!--Required -->
+		<parameter name="browserVersion" value="11" />  <!--Required -->
+		<parameter name="resolution" value="1280x1024" />  <!--Required -->
+		<parameter name="location" value="US East" /> <!--Required for Mac platform-->
+		<parameter name="deviceType" value="Web" />
+		<parameter name="deviceName" value="" /> <!--Best Practice is to use platform name and version and let Perfecto find device. -->
+		<parameter name="persona" value="" />
+		
+		<classes>
+			<class name="TestPackage.TestClass">
+				<methods>
+					<include name="TestName" />
+				</methods>			
+			</class>
+		</classes>
+		
+	</test>
+
+	<test name="Test iPhone6S">
+		<parameter name="platformName" value="iOS" />
+		<parameter name="platformVersion" value="11.1" />
+		<parameter name="manufacturer" value="Apple" />
+		<parameter name="model" value="iPhone-6" />
+		<parameter name="resolution" value="750 x 1334" />
+		<parameter name="location" value="NA-US-BOS" />
+<!-- 	<parameter name="browserName" value="mobileOS" /> --> <!-- Use Browser OR application(bundleId) capability (below)-->
+		<parameter name="bundleId" value="com.apple.camera" <!-- this is the Native App -->
+
+		<classes>
+			<class name="TestPackage.TestClass" />
+			<methods>
+				<include name="TestName" />
+			</methods>
+		</classes>
+	</test>
+
+	<test name="Test Galaxy Mini">
+		<parameter name="platformName" value="Android" /> <!-- Required-->
+		<parameter name="platformVersion" value="4.4.2" /> 
+		<parameter name="manufacturer" value="Samsung" />
+		<parameter name="model" value="Galaxy S IV Mini SCH-I435" />
+		<parameter name="resolution" value="540 x 960" />
+		<parameter name="location" value="NA-US-BOS" />
+		<parameter name="browserName" value="Chrome" /> <!-- Use Browser OR application capabilities (below)-->
+		<parameter name="appPackage" value = "com.sec.android.app.camera"/>
+		<parameter name="appActivity" value = ".Camera"/>
+<!-- 	<parameter name="deviceName" value="C18641DD" /> Device ID Here if using. Best Practice is to use platform name and version and let Perfecto find device. --> 
+		
+		<classes>
+			<class name="TestPackage.TestClass">
+				<methods>
+					<include name="TestName" />
+				</methods>			
+			</class>
+		</classes>
+	</test>
+
+</suite>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page name="PgAddNewPet">
+	<page-objects>
+		<page-object>
+			<alias>Add Pet</alias>
+			<xpath>//*[contains(text(),'Add Pet')]</xpath>
+		</page-object>
+		<page-object>
+			<alias>Pet Name</alias>
+			<id>name</id>
+		</page-object>
+		<page-object>
+			<alias>Birth Date</alias>
+			<id>birthDate</id>
+		</page-object>
+		<page-object>
+			<alias>Type</alias>
+			<id>type</id>
+		</page-object>
+	</page-objects>
+</page>

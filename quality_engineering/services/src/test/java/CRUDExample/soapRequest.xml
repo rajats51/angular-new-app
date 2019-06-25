@@ -1,0 +1,21 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><wsse:UsernameToken wsu:Id="UsernameToken-4FC438D6E48913E721152054077236825"><wsse:Username>rss-esi-serviceid</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">Ac9@Wh</wsse:Password><wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">I/TYs0ANcPtTtAGAuYsKsw==</wsse:Nonce><wsu:Created>2018-03-08T20:26:12.368Z</wsu:Created></wsse:UsernameToken></wsse:Security>
+       
+       <cx:systemContext xmlns:cx="urn:pnc.common.utils.v1.context">
+           <systemId>TDP</systemId>
+           <correlationId>eeaaa21c-6aa2-11e4-b116-123b93f75bbb</correlationId>
+       </cx:systemContext>
+   </soapenv:Header>
+   <soapenv:Body>
+       <rss:RSSPartyInq xmlns:ns="www.ifxforum.org/IFX_2X" xmlns:pnc="http://pnc.enterprise.integration/rss/2.3/party/schemas" xmlns:rss="http://pnc.enterprise.integration/rss/2.3/schemas"><!-- mandatory -->
+           <pnc:PartyInq><!-- mandatory -->
+               <ns:RqUID>548c70fa-de72-4931-b371-d4327c7275dc</ns:RqUID>
+               <pnc:PartySel>
+                   <ns:PartyKeys>
+                       <ns:PartyId>ARAB.0F4H000</ns:PartyId>
+                   </ns:PartyKeys>
+               </pnc:PartySel>
+           </pnc:PartyInq>
+       </rss:RSSPartyInq>
+   </soapenv:Body>
+</soapenv:Envelope>

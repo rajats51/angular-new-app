@@ -1,0 +1,105 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+repositories {
+    maven {
+        mavenLocal()
+        url 'https://rpo.pncint.net/artifactory/maven-release'
+    }
+}
+
+//Same as Compile (for dependencies) - for a grouping for all Browser Drivers.
+configurations {
+	pullDrivers
+}
+
+configurations.all {
+    // Check for updates every build
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
+dependencies {
+	//Framework Jar
+	compile ('pnc.mtp:mtp-selenium-automation-framework:1.5.5')
+
+	//Use pullexe Configuration to compile - pull down Drivers.
+	pullDrivers(group: 'pnc.mtp', name: 'LinuxChromeDriver', version: '2.40', ext: 'LinuxChromeDriver')
+	pullDrivers(group: 'pnc.mtp', name: 'WindowsChromeDriver', version: '2.40', ext: 'exe')
+	pullDrivers(group: 'pnc.mtp', name: 'WindowsFirefoxDriver', version: '0.23.0', ext: 'exe')
+	pullDrivers(group: 'pnc.mtp', name: 'WindowsIEDriver', version: '3.5.1.0', ext: 'exe')
+    pullDrivers(group: 'pnc/mtp', name: 'WindowsEdgeDriver', version: '16.16299', ext: 'exe')
+    pullDrivers(group: 'pnc.mtp', name: 'MacChromeDriver', version: '2.40', ext: 'MacChromeDriver')
+}
+
+
+test {
+   useTestNG {
+	   	// needed to pass arguments from gradle jvm to test jvm
+		// example: -Dcucumber.options='--tags @SmokeTest'
+		systemProperty "cucumber.options", System.getProperty("cucumber.options")
+		systemProperty "environment", System.getProperty("environment")
+		systemProperty "runRemote", System.getProperty("runRemote")
+		systemProperty "alm.username", System.getProperty("alm.username")
+		systemProperty "alm.password", System.getProperty("alm.password")
+		systemProperty "testSetId", System.getProperty("testSetId")
+		systemProperty "parallel", System.getProperty("parallel")
+		systemProperty "threadCount", System.getProperty("threadCount")
+
+		//suites 'CucumberSuite.xml'
+		suites 'testNG_CPO_Execute.xml'
+		//suites 'CucumberSuite.xml'
+     }
+}
+
+
+//********************************************************************************
+//********************** DELETE/COPY DRIVER TASKS ********************************
+//********************************************************************************
+//Delete current Drivers in the file path. ${projectDir} is the Base Project Path
+task deleteDrivers(type: Delete) {
+	delete fileTree("${projectDir}/src/main/resources/drivers") {
+    	include "*Driver*", "*driver*"
+    }
+}
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
+task filepermission(type: Exec) {
+	commandLine 'chmod', '777', 'src/main/resources/drivers/LinuxChromeDriver.chromedriver', 'src/main/resources/drivers/MacChromeDriver.macchromedriver'
+}
+
+//Copy Drivers from Artifactory - using pullDrivers configuration into set Directory.
+task copyAndRenameDrivers(type: Copy){
+	into "${projectDir}/src/main/resources/drivers"
+	from configurations.pullDrivers
+
+	rename { String fileName ->
+          fileName.replace("LinuxChromeDriver-2.40.LinuxChromeDriver", "LinuxChromeDriver.chromedriver")
+  	}
+
+    rename { String fileName ->
+    	fileName.replace("WindowsChromeDriver-2.40.exe", "WindowsChromeDriver.exe")
+  	}
+
+ 	rename { String fileName ->
+    	fileName.replace("WindowsFirefoxDriver-0.23.0.exe", "WindowsFirefoxDriver.exe")
+  	}
+
+ 	rename { String fileName ->
+    	fileName.replace("WindowsIEDriver-3.5.1.0.exe", "WindowsIEDriver.exe")
+  	}
+
+    rename { String fileName ->
+        fileName.replace("WindowsEdgeDriver-16.16299.exe", "WindowsEdgeDriver.exe")
+    }
+    
+    rename { String fileName ->
+    	fileName.replace("MacChromeDriver-2.40.MacChromeDriver", "MacChromeDriver.macchromedriver")
+  	}
+}
+
+//Build will not run until Drivers are copied using copyAndRenameDrivers task.
+copyAndRenameDrivers.dependsOn deleteDrivers
+//********************************************************************************

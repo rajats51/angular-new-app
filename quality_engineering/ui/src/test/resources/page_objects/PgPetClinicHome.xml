@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page name="PgPetClinicHome">
+	<page-objects>
+		<page-object>
+			<alias>Find Owners</alias>
+			<xpath>//*[@id="main-navbar"]/ul/li[3]/a</xpath>
+		</page-object>
+	</page-objects>
+</page>

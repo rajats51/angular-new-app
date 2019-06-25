@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Listeners TestSuite">
+	<!-- Tell the FULL TEST SUITE - to use Listeners from the 'class-name' - Package path to Listener Class file name. -->	
+	<listeners>
+		<listener class-name="pnc.mtp.frameworktests.TestNGReporterListener"></listener>	
+      	<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+      	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+    </listeners>
+    
+	<!-- Parameter values passed to the TestNG Test class files for reporting directory and test environment for URL -->
+	<parameter name="runRemote" value="false" />
+	<parameter name="environment" value="CPO" /> <!--Environment Parameter can be set here for suite level OR within each test -->
+    
+		
+
+	<test name="Chrome Local Test">
+	<parameter name="browserName" value="Chrome_Headless" />
+		<classes>
+			<class name="tests.CucumberRunner">
+			</class>					
+		</classes>
+	</test>		
+	
+		<!-- <test name="IE Local Test">
+	<parameter name="browserName" value="IE" />
+		<classes>
+			<class name="tests.CucumberRunner">
+			</class>					
+		</classes>
+	</test>		 -->
+
+</suite>

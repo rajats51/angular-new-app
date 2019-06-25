@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Listeners TestSuite">
+	<!-- Tell the FULL TEST SUITE - to use Listeners from the 'class-name' - Package path to Listener Class file name. -->	
+	<listeners>
+		<listener class-name="pnc.mtp.frameworktests.TestNGReporterListener"></listener>	
+      	<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+      	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+    </listeners>
+    
+	<!-- Parameter values passed to the TestNG Test class files for reporting directory and test environment for URL -->
+	<parameter name="runRemote" value="false" />
+    <parameter name="environment" value="QAOracle" /> <!--Environment Parameter can be set here for suite level OR within each test -->
+		
+	<test name="Oracle Test">
+	<parameter name="browserName" value="Internet Explorer" />
+		<classes>
+			<class name="tests.TemplateDatabaseTestBaseTestByTest">
+			</class>			
+		</classes>
+	</test>		
+			
+</suite>
