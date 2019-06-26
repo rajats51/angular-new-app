@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogConfig, MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { PopupModalComponent } from './popup-modal/popup-modal.component';
 import { PopupModal2Component } from './popup-modal2/popup-modal2.component';
-import { PasswordSuccessPopupComponent } from 'src/app/password/password-success-popup/password-success-popup.component';
+import { PasswordSuccessPopupComponent } from '../password/password-success-popup/password-success-popup.component';
 
 @Component({
   selector: 'app-popup-dialog',
