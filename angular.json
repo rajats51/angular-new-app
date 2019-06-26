@@ -27,7 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles"
+              "src/styles.scss"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
@@ -90,7 +90,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles"
+              "src/styles.scss"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
