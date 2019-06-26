@@ -10,7 +10,7 @@ import { DetailComponent } from '../detail/detail.component';
 import { TimelineComponent } from '../timeline/timeline.component';
 import { SolutionComponent } from '../solution/solution.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CpoTaskCardModule } from "src/app/common/components/cpo-task-card/cpo-task-card.module";
+import { CpoTaskCardModule } from "..//common/components/cpo-task-card/cpo-task-card.module";
 
 @NgModule({
   declarations: [SolutionTabsComponent,
